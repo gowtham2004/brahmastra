@@ -149,56 +149,36 @@ function closeNav() {
         <h4 class="modal-title">PAPER PRESENTATION</h4>
       </div>
       <div class="modal-body">
-        <p>Paper Presentations aims at giving a platform to young engineers to fuel their brains to ideate the ideas that never existed. The event intends to encourage inventions, scientific investigations and research to promote their applications for development in all sectors of Engineering. </p>
-		<br>
-		
-		<p><b>CALL FOR PAPER:</b><br>
-    Contributions from students of diploma, bachelors and masters of engineering colleges to share their innovative research work.</p>
-		
-		<p><b>THEME OF PAPER:</b><br>
-		Students can select any technical subject related to Electronics and Communication Engineering or whether the thoughts or vision of the students can reach.</p>
-		<p><b>DOMAINS:</b><br>
-			VLSI Design
-	Communication Engineering    
-	Microwave and Optical Communication 
-	Wireless Communication
-	Mobile Communication
-	Embedded System
-	Robotics
-	Artificial Intelligence
-	Machine Learning
-	Nanotechnology
-	Internet of Things
-	Image Processing  
-	Digital Signal Processing
-	Satellite Communication
-	5G Networks
-	Photo electronics
-</p>
+      <p>Paper Presentations aims to give a platform to young engineers to fuel their brains and ideate ideas that never existed. The event intends to encourage inventions, scientific investigations, and research to promote their applications for development in all sectors of Engineering.</p>
 
-<p><b>RULES:     </b><br>
-•	The presentation topics should be selected from the domains mentioned above.
-•	Maximum number of participants in a Team is 3.
-•	The presentation should contain 6-25 slides, animations allowed.
-•	The teams will get 7(5+2) minutes for presentation and followed by question and answer session.
-•	The mail with submissions should contain:
-		Title- theme of the paper.
-		Name of members in team.
-		In presentation (ppt) format. 
-•	 Last day to submit soft copy of your report (via e-mail) will be two days prior to the day of presentation.
-•	The decision of judges will be final and no arguments or appeal will be entertained.
-•	Time limit should be strictly followed and extension may lead to deduction of marks.
-•	Students must have their college id. 
-•	Deadline to submit your ppt-20.09.2023(Friday). 
-•	Sent your ppt to email id.
+<p><strong> <h4> Call for Paper:</h4></strong></p>
+<p>Contributions from students of diploma, bachelors, and masters of engineering colleges to share their innovative research work.</p>
 
-</p>
-		<p><b>CONTACT DETAILS</b><br>
-    1.	N.Rajavel -9361182825 <br>
-    2.	M.Anusiya-8056528850 <br>
-    3.	C.Kmali-6380757352  <br>
+<p><strong> <h4> Theme of Paper:</h4></strong></p>
+<p>Students can select any technical subject related to Electronics and Communication Engineering or explore the thoughts and visions of the students.</p>
 
-		 </p>
+<p><strong> <h4> Domains:</h4></strong></p>
+<p>&#8226; Microwave and Optical Communication<br>
+&#8226; Wireless Communication and its technologies<br>
+&#8226; Artificial Intelligence and Machine Learning<br>
+&#8226; Nanotechnology<br>
+&#8226; Internet of Things<br>
+&#8226; VLSI - Design</p>
+
+<p><strong> <h4> Rules:</h4></strong></p>
+<p>&#8226; Maximum number of participants in a Team is 2.<br>
+&#8226; The presentation should contain 6-12 slides, animations allowed.<br>
+&#8226; The teams will get 7 minutes for presentation followed by a question and answer session.<br>
+&#8226; Last day to submit the soft copy of your ppt (via e-mail) will be two days prior to the day of presentation.<br>
+&#8226; The decision of judges will be final, and no arguments or appeals will be entertained.<br>
+&#8226; Time limit should be strictly followed, and extension may lead to deduction of marks.<br>
+&#8226; Students must have their college ID.<br>
+&#8226; Deadline to submit your ppt: 20.09.2023 (Wednesday).<br>
+&#8226; Send your ppt to email id.</p>
+
+<p><strong> <h4>  Contact Details:</h4></strong></p>
+<p>1. Rajavel N - 9361182825<br>
+2. Anusiya M - 8056528850</p>
 		  <?php if(isset($_SESSION['login_status']) && !isset($_SESSION['event_status'])) { ?>
       <button type="button" style="background-color:green; " class="btn btn-default btn-block" onclick="window.location.href='event_register.php';">Register Now</button> 
     <?php } else if(isset($_SESSION['event_status'])) { ?>
@@ -222,32 +202,35 @@ function closeNav() {
         <h4 class="modal-title">BINARY BLAST</h4>
       </div>
       <div class="modal-body">
-		<p>Ignite Your Electronics Knowledge! Test your circuits of intellect in our challenge. From semiconductors to circuits, let’s charge up your understanding. Prizes await the brightest sparks!<br>
-		
-		<br><p><b>ROUND-1 [MCQ MAZE]</b><br>
-		Test your knowledge in our MCQ event, covering diverse topics. Put your skills to the test, compete and learn. Get ready to conquer the MCQ maze! <br>
-		Participants will face a difficult test with 20 questions, each worth 1 mark. The challenge spans 15 minutes, and the top 10 teams securing the highest scores, will advance to the next round.
-		<p>ROUND-2 [CIRCUIT MASTERMIND]</b><br>
-		Unravel intricate electronic puzzles, diagnose glitches, and race against the clock to revive malfunctioning circuits. Sharpen your problem-solving skills. <br>
-	Teams will encounter five error-ridden circuits, each worth 5 marks, in 15-minutes duration. The top 5 teams mastering these challenges will advance to the thrilling final round.
+      <p>Test your circuits of intellect in our challenge. From semiconductors to circuits, charge up your understanding. Prizes await the brightest sparks!</p>
 
-		
-		<p><b>ROUND-3 [ELECTRO TALKS]</b><br>
-		Dive into the world of ideas at our Technical Talking Event. Engage in dynamic conversations and broaden your knowledge.
-	Participants must select a Technical topic from a given list and speak for 1 minute. <br> Winning teams are determined by valid points earned from insightful explanations. Unveil your knowledge and compete in this engaging challenge!
+<h4>Round-1 [MCQ Maze]</h4>
+<p><strong>Description:</strong><br>
+Test your knowledge in our MCQ event, covering diverse topics. Put your skills to the test, compete and learn. Get ready to conquer the MCQ maze!</p>
+<p><strong>Rules:</strong><br>
+&bull; Number of participants: Max 2 per team<br>
+&bull; Participants will face a test with 20 questions, each worth 1 mark.<br>
+&bull; The challenge spans 15 minutes and the top 10 teams securing the highest scores will advance to the next round.</p>
 
+<h4>Round-2 [Circuit Mastermind]</h4>
+<p><strong>Description:</strong><br>
+Unravel intricate electronic puzzles, diagnose glitches, and race against the clock to revive malfunctioning circuits. Sharpen your problem-solving skills.</p>
+<p><strong>Rules:</strong><br>
+&bull; Teams will encounter five error-ridden circuits, each worth 5 marks, in 15-minutes duration.<br>
+&bull; The top 5 teams mastering these challenges will advance to the thrilling final round.</p>
 
-    <p><b>RULES & CONDITIONS</b><br>
-		•	Participants should form a group of two peoples
-    •	Decisions of the judges shall be conclusive
-    •	Latecomers may be restricted from entering the ongoing event
-    •	Discussion with other team is considered as malpractice
+<h4>Round-3 [Electro Talks]</h4>
+<p><strong>Description:</strong><br>
+Dive into the world of ideas at our Technical Talking Event. Engage in dynamic conversations and broaden your knowledge.</p>
+<p><strong>Rules:</strong><br>
+&bull; Participants select a Technical topic from a given list, speaking for 1 minute.<br>
+&bull; Winning teams are determined by valid points earned from insightful explanations.</p>
 
-		
-		<p><b>CONTACT DETAILS</b><br>
-		1. Dhanush Karthick D - 8825927354 <br>
-	2. Harini S - 9360395434
-
+<h4>Contact Details:</h4>
+<ol>
+    <li>Dhanush Karthick D - 8825927354</li><br>
+    <li>Harini S - 9360395434</li>
+</ol>
 
 		 <?php if(isset($_SESSION['login_status']) && !isset($_SESSION['event_status'])) { ?>
       <button type="button" style="background-color:green; " class="btn btn-default btn-block" onclick="window.location.href='event_register.php';">Register Now</button> 
@@ -270,52 +253,50 @@ function closeNav() {
         <h4 class="modal-title">TECH KRITI</h4>
       </div>
       <div class="modal-body">
-		<p> Round-I >>> Technical Connections</p>
-		<br>  20 Questions
- Each Question carries 1 Mark
- Duration: 15 Minutes
- Top 10 Teams will be qualified for Next round</br>
-		<p><b>DESCRIPTION</b><br>
-		Participants will face a challenging round consisting of 20 questions, each carrying a 
-value of 1 mark. The competition will unfold over a span of 15 minutes, during which teams will 
-strive to demonstrate their knowledge and quick thinking. The top-performing 10 teams will earn 
-the coveted qualification for the next round, showcasing their prowess in this intense intellectual 
-contest</p>
-		
-		<p><br><b>Round-II >>> Circuit Simulation [Multisim]
-</b></br>
- Two circuits will be given with Errors
- Each Circuit carries 10 Marks
- Duration: 20 Minutes
- Top 5 Teams will be qualified for Final round<br></p>
-		
-		<p><b>DESCRIPTION</b><br>
-		During this phase, participants will receive two circuits, each containing errors that 
-need to be identified and rectified. Each circuit holds a weightage of 10 marks, and teams will 
-have 20 minutes to meticulously debug and correct the circuits. The top 5 teams excelling in this 
-challenge will advance to the highly anticipated final round, showcasing their problem-solving 
-abilities and technical smartness.
-		
-		<p><br><b>Round-III >>> Test your circuit minds</b></br>
-		 Some Electronic Components will be given
- Participants can construct any circuit using Breadboard
- Winner & Runner will be selected in their circuit complexity & Output accuracy <br></p>
-<p><b>DESCRIPTION</b><br>
-In this segment of the competition, participants will receive a selection of electronic 
-components, granting them the freedom to construct a circuit of their choice using a breadboard. 
-The evaluation criteria for determining the winner and runner-up will encompass the intricacy of 
-the circuit design as well as the precision of its output, highlighting the fusion of technical skill 
-and accuracy in their creations
-		<p><br><b>RULES</b></br>
-		 Participants should form a group of two people
- Decisions of the judges shall be conclusive
- Late comers may be restricted from entering ongoing event
- Discussion with other team is considered as malpractice
-		
-		<p><br><b>CONTACT DETAILS</b></br>
-		1. Arunprasath B -8220878401 <br>
-2. Shalini S-9787663960
+      <p><strong> <h4> Round 1: Technical Connections</strong></p>
 
+<p><strong> <h4> Description:</h4></strong>
+&#8226; Number of participants: max. 2 per team.<br>
+&#8226; Group of images will be displayed as a clue to find the component's name.<br>
+&#8226; The best 10 entries will be selected by the panel.</p>
+
+<p><strong> <h4> Rules for the Event:</h4></strong>
+&#8226; 20 Questions<br>
+&#8226; Each Question carries 1 Mark<br>
+&#8226; Duration: 15 Minutes<br>
+&#8226; Top 10 Teams will be qualified for the Next round</p>
+
+<p><strong>  <h4> Round 2: Circuit Simulation [Multisim]</h4></strong></p>
+
+<p><strong>  <h4>  Description:</h4></strong>
+&#8226; Number of participants: max. 2 per team.<br>
+&#8226; Two circuits will be given to the participants with errors in Multisim.<br>
+&#8226; Participants are asked to spot the errors.<br>
+&#8226; The best 5 entries will be selected by the panel based on timing and the number of circuits solved.</p>
+
+<p><strong> <h4> Rules for the Event:</h4></strong>
+&#8226; Two circuits will be given with Errors.<br>
+&#8226; Each circuit carries 10 Marks.<br>
+&#8226; Duration: 20 Minutes.<br>
+&#8226; Top 5 Teams will be qualified for the Final round.</p>
+
+<p><strong> <h4> Round 3: Test your circuit minds</h4></strong></p>
+
+<p><strong> <h4> Description:</h4></strong>
+&#8226; Electronic components will be given to the participants.<br>
+&#8226; Participants will be asked to construct a circuit from the given components.<br>
+&#8226; Circuits must be constructed on a breadboard.<br>
+&#8226; The best 2 entries will be selected by the panel based on their circuit and output accuracy.</p>
+
+<p><strong> <h4> Rules & Regulations:</h4></strong>
+&#8226; Participants should use only the given components.<br>
+&#8226; Participants can construct any circuit using a Breadboard.<br>
+&#8226; Winners & Runners will be selected based on their circuit complexity & Output accuracy.</p>
+
+<p><strong> <h4>Contact Details: </h4> </strong></p>
+
+<p>1. Arunprasath .B - 8220878401<br>
+2. Shalini.S - 9787663960</p>
 		 <?php if(isset($_SESSION['login_status']) && !isset($_SESSION['event_status'])) { ?>
       <button type="button" style="background-color:green; " class="btn btn-default btn-block" onclick="window.location.href='event_register.php';">Register Now</button> 
     <?php } else if(isset($_SESSION['event_status'])) { ?>
@@ -348,25 +329,25 @@ and accuracy in their creations
 room.<br>
 <p><b>Rules</b><br>
 
- Participants from a team should select five gadgets from a lot.
- Only one member from a team will be allowed in a dark room who should find the five
-gadgets correctly.
- The best five teams will be selected for next round based on timing and gadget count.
+&#8226;Participants from a team should select five gadgets from a lot.<br>
+&#8226;Only one member from a team will be allowed in a dark room who should find the five
+gadgets correctly. <br>
+&#8226;The best five teams will be selected for next round based on timing and gadget count.
 
 		
 		<p><b>Round 2: Description</b><br>
-		 No of Participants: max.4 per team.
- The students are expected to find the clue correctly to reach the final destination.
- The best two entries will be selected by the panel based on the timing, and those that 
-reach their destination on a first come, first served basis.
+		&#8226;No of Participants: max.4 per team. <br>
+    &#8226;The students are expected to find the clue correctly to reach the final destination. <br>
+    &#8226;The best two entries will be selected by the panel based on the timing, and those that <br>
+reach their destination on a first come, first served basis. <br>
 			
 		<p><b>RULES</b><br>
-		 A task will be given to the participants.
- Once the task is completed, a clue will be given that directs you to another place where 
-you can find another clue.
- Each clue will help you move toward your final destination.
- A task will be given at the final location.
- The first two teams that finish the final task will be selected by the panel.
+		&#8226;A task will be given to the participants. <br>
+    &#8226;Once the task is completed, a clue will be given that directs you to another place where 
+you can find another clue. <br>
+&#8226;Each clue will help you move toward your final destination. <br>
+&#8226;A task will be given at the final location. <br>
+&#8226;The first two teams that finish the final task will be selected by the panel. <br>
 
 		
 		<p><b>Event Co-ordinators:</b><br>
