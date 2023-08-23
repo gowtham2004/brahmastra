@@ -36,7 +36,7 @@
          <div class="row">
            <div class="col-md-6" data-aos="fade-up">
 
-             <form action="event_register_action.php" method="post">
+             <form action="event_register_action.php" method="post" enctype="multipart/form-data">
               <h3>Personal Details</h3>
                <div class="border" style="border: 1px solid white;padding: 30px;">
                <div class="row form-group">
@@ -157,7 +157,7 @@
                  <div class="row form-group">
                   <div class="col-md-12">
                     <label for="subject">Upload Proof * </label>
-                    <input type="file" name="proof" id="proof" class="form-control" required="">
+                    <input type="file" name="image" id="image" accept="image/*" class="form-control" required="">
                   </div>
                 </div>
                 <div class="row form-group">

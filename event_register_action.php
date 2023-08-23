@@ -27,6 +27,12 @@
     $new_offset = str_pad($new_value, 3, '0', STR_PAD_LEFT);
     $reg_id = "BHM".$new_offset;
 
+    $targetDir = "payment_proof/";
+    $proofName = basename($_FILES["image"]["name"]);
+    $targetPath = $targetDir . $trans_id . ".jpg";
+    if (move_uploaded_file($_FILES["image"]["tmp_name"], $targetPath)) { }
+    else { echo "<script>alert('Upload Failed');</script>"; }
+
     foreach($event as $ev) {
       $data = explode(',',$ev);
       $q = "INSERT INTO event_register(reg_id, user_id, username, email, phone, dept, college, year, event_dept, event_name, tran_id) VALUES ('$reg_id', '$user_id','$name','$email', '$phone', '$dept', '$college', '$year', '$data[1]','$data[0]', '$trans_id')";
@@ -37,6 +43,6 @@
     $stmt->bindParam(':user_id', $user_id, PDO::PARAM_INT);
     $stmt->execute();
     $_SESSION['event_status'] = TRUE;
-    header("Location:cseevent.php");
+    // header("Location:cseevent.php");
   }
 ?>
