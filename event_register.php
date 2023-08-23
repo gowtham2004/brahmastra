@@ -153,7 +153,13 @@
                 </div>
 
                <br>
-                 <p style="color: red;">Note : Pay The Registration fee 250 per canditate. use the above qr code and enter the Transaction id below upload the evidence</p>
+                 <p style="color: red;">Note : Pay The Registration fee 250 per canditate. use the above qr code and enter the Transaction id below and upload the evidence</p>
+                 <div class="row form-group">
+                  <div class="col-md-12">
+                    <label for="subject">Upload Proof * </label>
+                    <input type="file" name="proof" id="proof" class="form-control" required="">
+                  </div>
+                </div>
                 <div class="row form-group">
                   <div class="col-md-12">
                     <label for="subject">Reference ID * </label>
