@@ -150,10 +150,10 @@ function closeNav() {
       <div class="modal-body">
       <p><strong>Event Name:</strong> Paper Presentation</p>
 
-<p>1. Maximum number of participants in a team is 3.</p>
-<p>2. The topics for the papers can be chosen on your own.</p>
-<p>3. It is advisable that the presentation focuses on one particular topic.</p>
-<p>4. The report should be well comprehended, albeit advanced, which could appeal to an undergraduate.</p>
+<p>&#8226; Maximum number of participants in a team is 3.</p>
+<p> &#8226; The topics for the papers can be chosen on your own.</p>
+<p> &#8226; It is advisable that the presentation focuses on one particular topic.</p>
+<p>&#8226; The report should be well comprehended, albeit advanced, which could appeal to an undergraduate.</p>
 <p><strong>Student Coordinators:</strong></p>
 <p>1. M. Sakthivel<br>2. P. Dhivakar</p>
 <?php if(isset($_SESSION['login_status']) && !isset($_SESSION['event_status'])) { ?>
@@ -185,17 +185,17 @@ function closeNav() {
 <p>"IMAGINATION IS MORE IMPORTANT THAN KNOWLEDGE"</p>
 <p>World of designing is running faster than the speed of light. Now it’s time to express your imagination power. Here “CAD WAR” is challenging your designing brilliance. The battle has begun, so challenge your mind. If you are mad for CAD, get armed up with all your design weapons and tricks in this war of designing.</p>
 <p><strong>Rules and Regulations:</strong></p>
-<p>1. Students must carry a valid college ID card.</p>
-<p>2. Should not use any electronic accessories inside a venue hall.</p>
-<p>3. Three hours will be allotted for the selected candidate to complete their designs.</p>
+<p>&#8226; Students must carry a valid college ID card.</p>
+<p> &#8226; Should not use any electronic accessories inside a venue hall.</p>
+<p> &#8226; Three hours will be allotted for the selected candidate to complete their designs.</p>
 <p><strong>Flow of Event:</strong></p>
 <p><strong>ROUND 1:</strong> Selection round for 15 minutes (20 objective-type questions)</p>
 <p><strong>ROUND 2:</strong> Design a given 2D model into a 3D model using AUTOCAD.</p>
-<p>1. Maximum 2 participants per team.</p>
-<p>2. Model will be given at the time of the competition.</p>
-<p>3. The final result will be judged on the basis of completeness and optimum time.</p>
-<p>4. Top 3 teams will be awarded handsome prizes and merit certificates.</p>
-<p>5. For any clarification or further details, interested candidates can contact the event organizers.</p>
+<p>&#8226; Maximum 2 participants per team.</p>
+<p>&#8226; Model will be given at the time of the competition.</p>
+<p> &#8226; The final result will be judged on the basis of completeness and optimum time.</p>
+<p> &#8226; Top 3 teams will be awarded handsome prizes and merit certificates.</p>
+<p> &#8226; For any clarification or further details, interested candidates can contact the event organizers.</p>
 <p><strong>Student Coordinators:</strong></p>
 <p>1. S. Iyyappan<br>2. L. Gokulnath</p>
 
@@ -278,18 +278,18 @@ function closeNav() {
 <p>• Round 1: Profile cutting, to be completed in 40-45 mins.</p>
 <p>• Round 2: Profile cutting, to be completed in 50-55 mins. Participants will be shortlisted after Round 1 for Round 2.</p>
 <p><strong>Rules and Regulations:</strong></p>
-<p>1. All participants should carry workshop aprons and wear leather shoes.</p>
-<p>2. Participants should carry their college ID card.</p>
-<p>3. Experience of working with a Lathe machine.</p>
-<p>4. Only one member in a team.</p>
-<p>5. Accuracy of up to 5% is expected.</p>
-<p>6. Not more than 2 tools would be provided. Fine will be levied if any damages occur (Tool, Machine) during operation.</p>
-<p>7. Any kind of malpractices like the use of cell phones during the competition is completely banned.</p>
-<p>8. Judges' decision will be final.</p>
-<p>9. No extra work piece will be provided, and carrying any extra material is banned.</p>
-<p>10. After the completion of the task, all accessories must be returned.</p>
+<p>&#8226; All participants should carry workshop aprons and wear leather shoes.</p>
+<p>&#8226; Participants should carry their college ID card.</p>
+<p>&#8226; Experience of working with a Lathe machine.</p>
+<p>&#8226; Only one member in a team.</p>
+<p>&#8226; Accuracy of up to 5% is expected.</p>
+<p>&#8226; Not more than 2 tools would be provided. Fine will be levied if any damages occur (Tool, Machine) during operation.</p>
+<p>&#8226; Any kind of malpractices like the use of cell phones during the competition is completely banned.</p>
+<p>&#8226; Judges' decision will be final.</p>
+<p>&#8226; No extra work piece will be provided, and carrying any extra material is banned.</p>
+<p>&#8226; After the completion of the task, all accessories must be returned.</p>
 <p><strong>Student Coordinators:</strong></p>
-<p>1. S. Kaviyarasu<br>2. R. Lingesh Waran</p>
+<p> S. Kaviyarasu<br> R. Lingesh Waran</p>
 
 		 
 <?php if(isset($_SESSION['login_status']) && !isset($_SESSION['event_status'])) { ?>

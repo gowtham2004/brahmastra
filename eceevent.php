@@ -207,7 +207,7 @@ function closeNav() {
 <h4>Round-1 [MCQ Maze]</h4>
 <p><strong>Description:</strong><br>
 Test your knowledge in our MCQ event, covering diverse topics. Put your skills to the test, compete and learn. Get ready to conquer the MCQ maze!</p>
-<p><strong>Rules:</strong><br>
+<p> <h5>Rules:</h5><br>
 &bull; Number of participants: Max 2 per team<br>
 &bull; Participants will face a test with 20 questions, each worth 1 mark.<br>
 &bull; The challenge spans 15 minutes and the top 10 teams securing the highest scores will advance to the next round.</p>
@@ -323,25 +323,24 @@ Dive into the world of ideas at our Technical Talking Event. Engage in dynamic c
         <p>Explore a new dimension of coding through <b>Carbine Coders 2k23!!</b> Quick-witted people with basic coding skills are the ones we’re looking for. 
 		The event will also test the swift thinking abilities and problem solving skills of the participants.</p>
 		
-		<p><b>Round 1: Get acquainted with Python</b><br>
+		<p><b> <h5> Round 1: Get acquainted with Python</h5></b><br>
 		• No of Participants : Max.4 per team <br>
 		• The students are expected to find the components or gadgets that are kept in the dark 
 room.<br>
-<p><b>Rules</b><br>
-
+<p><b> <h5>Rules</h5></b><br>
 &#8226;Participants from a team should select five gadgets from a lot.<br>
 &#8226;Only one member from a team will be allowed in a dark room who should find the five
 gadgets correctly. <br>
 &#8226;The best five teams will be selected for next round based on timing and gadget count.
 
 		
-		<p><b>Round 2: Description</b><br>
+		<p><b><h5>Round 2: Description</h5></b><br>
 		&#8226;No of Participants: max.4 per team. <br>
     &#8226;The students are expected to find the clue correctly to reach the final destination. <br>
     &#8226;The best two entries will be selected by the panel based on the timing, and those that <br>
 reach their destination on a first come, first served basis. <br>
 			
-		<p><b>RULES</b><br>
+		<p><b><h5>RULES</h5></b><br>
 		&#8226;A task will be given to the participants. <br>
     &#8226;Once the task is completed, a clue will be given that directs you to another place where 
 you can find another clue. <br>
@@ -350,9 +349,9 @@ you can find another clue. <br>
 &#8226;The first two teams that finish the final task will be selected by the panel. <br>
 
 		
-		<p><b>Event Co-ordinators:</b><br>
+		<p><b><h5>Event Co-ordinators:</h5></b><br>
     1. R.Sudhan - 6383379014 <br>
-2. R.Vedhashree - 9047706249
+2. R.Vedhashree - 9047706249 <br>
 		 
 		  <?php if(isset($_SESSION['login_status']) && !isset($_SESSION['event_status'])) { ?>
       <button type="button" style="background-color:green; " class="btn btn-default btn-block" onclick="window.location.href='event_register.php';">Register Now</button> 
