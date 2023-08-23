@@ -5,7 +5,7 @@
     $name = $_POST['firstName']." ".$_POST['lastName'];
     $user_id = $_SESSION['login_ID'];
     $email = $_POST['email'];
-    $phone = $_POST['phone'];
+    $phone = $_POST['mobile'];
     $college = $_POST['inst'];
     $dept  = $_POST['depart'];
     $year = $_POST['year'];
@@ -43,6 +43,6 @@
     $stmt->bindParam(':user_id', $user_id, PDO::PARAM_INT);
     $stmt->execute();
     $_SESSION['event_status'] = TRUE;
-    // header("Location:cseevent.php");
+    header("Location:cseevent.php");
   }
 ?>
