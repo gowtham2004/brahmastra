@@ -50,11 +50,11 @@ function closeNav() {
 </head>
 
 <body  >
-  <div id="loader-wrapper">
+  <!-- <div id="loader-wrapper">
   <div id="loader"></div>
   <div class="loader-section section-left"></div>
   <div class="loader-section section-right"></div>
-</div>
+</div> -->
 <div class="topbar animated fadeInLeftBig"></div>
 
 <!-- Header Starts -->
@@ -64,7 +64,6 @@ function closeNav() {
 <h3></h3>
 <!--<h2 align=center>Computer Science Engineering</h2>
 -->
-
 	
 <div id="cse" class="clearfix grid">
     <h3></h3><h3></h3><h3></h3>
@@ -121,21 +120,7 @@ function closeNav() {
 
 <!-- works -->
 
-<h3></h3>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div class="footer text-center spacer" >
-<p class="wowload flipInX">
-<a href="#"><img src="images/portfolio/FB.png"/></a> 
-<a href="#"><img src="images/portfolio/twitter.png"/></a> 
-<a href="#"><img src="images/portfolio/isnta.png"/></a> 
-
-<br> <b>© 2k23 Brahmastra. All rights reserved.</b>
-</div>
+<?php include("includes/footer.php"); ?>
 <!-- # Footer Ends -->
 
  
