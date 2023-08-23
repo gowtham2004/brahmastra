@@ -207,7 +207,7 @@ function closeNav() {
 <h4>Round-1 [MCQ Maze]</h4>
 <p><strong>Description:</strong><br>
 Test your knowledge in our MCQ event, covering diverse topics. Put your skills to the test, compete and learn. Get ready to conquer the MCQ maze!</p>
-<p> <h5>Rules:</h5><br>
+<p><strong>Rules:</strong><br>
 &bull; Number of participants: Max 2 per team<br>
 &bull; Participants will face a test with 20 questions, each worth 1 mark.<br>
 &bull; The challenge spans 15 minutes and the top 10 teams securing the highest scores will advance to the next round.</p>
@@ -328,25 +328,25 @@ Dive into the world of ideas at our Technical Talking Event. Engage in dynamic c
 		• The students are expected to find the components or gadgets that are kept in the dark 
 room.<br>
 <p><b> <h5>Rules</h5></b><br>
-&#8226;Participants from a team should select five gadgets from a lot.<br>
-&#8226;Only one member from a team will be allowed in a dark room who should find the five
+&#8226; Participants from a team should select five gadgets from a lot.<br>
+&#8226; Only one member from a team will be allowed in a dark room who should find the five
 gadgets correctly. <br>
-&#8226;The best five teams will be selected for next round based on timing and gadget count.
+&#8226; The best five teams will be selected for next round based on timing and gadget count.
 
 		
 		<p><b><h5>Round 2: Description</h5></b><br>
-		&#8226;No of Participants: max.4 per team. <br>
-    &#8226;The students are expected to find the clue correctly to reach the final destination. <br>
-    &#8226;The best two entries will be selected by the panel based on the timing, and those that <br>
+		&#8226; No of Participants: max.4 per team. <br>
+    &#8226; The students are expected to find the clue correctly to reach the final destination. <br>
+    &#8226; The best two entries will be selected by the panel based on the timing, and those that <br>
 reach their destination on a first come, first served basis. <br>
 			
 		<p><b><h5>RULES</h5></b><br>
-		&#8226;A task will be given to the participants. <br>
-    &#8226;Once the task is completed, a clue will be given that directs you to another place where 
+		&#8226; A task will be given to the participants. <br>
+    &#8226; Once the task is completed, a clue will be given that directs you to another place where 
 you can find another clue. <br>
-&#8226;Each clue will help you move toward your final destination. <br>
-&#8226;A task will be given at the final location. <br>
-&#8226;The first two teams that finish the final task will be selected by the panel. <br>
+&#8226; Each clue will help you move toward your final destination. <br>
+&#8226; A task will be given at the final location. <br>
+&#8226; The first two teams that finish the final task will be selected by the panel. <br>
 
 		
 		<p><b><h5>Event Co-ordinators:</h5></b><br>
