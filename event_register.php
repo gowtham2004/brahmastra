@@ -129,7 +129,7 @@
                  <div class="col-md-12">        
                    <label for="subject">Event</label>
                    <li name="event" id="itemList">
-                     <ul id="event" name="event" class="item cse"><input type="checkbox" name="event[]" value="Paper Presentation,cse"> Paperio</ul>
+                   <ul id="event" name="event" class="item cse"><input type="checkbox" name="event[]" value="Paper Presentation,cse"> Paperio</ul>
                      <ul id="event" name="event" class="item cse"><input type="checkbox" name="event[]" value="Techcrack,cse"> Techcrack</ul>
                      <ul id="event" name="event" class="item cse"><input type="checkbox" name="event[]" value="Postero,cse"> Postero</ul>
                      <ul id="event" name="event" class="item cse"><input type="checkbox" name="event[]" value="Thegidi,cse"> Thegidi</ul>
@@ -137,14 +137,14 @@
                      <ul id="event" name="event" class="item aids"><input type="checkbox" name="event[]" value="AI Quiz,aids"> AI Quiz</ul>
                      <ul id="event" name="event" class="item aids"><input type="checkbox" name="event[]" value="Bug Finder,aids"> Bug Finder</ul>
                      <ul id="event" name="event" class="item aids"><input type="checkbox" name="event[]" value="Bidding War,aids"> Bidding War</ul>
-                     <ul id="event" name="event" class="item ece"><input type="checkbox" name="event[]" value="Paper Presentation,ece"> Current Xplore</ul>
-                     <ul id="event" name="event" class="item ece"><input type="checkbox" name="event[]" value="Electritech Expo,ece"> Electritech Expo</ul>
-                     <ul id="event" name="event" class="item ece"><input type="checkbox" name="event[]" value="Miniute To Win It,ece"> Miniute To Win It</ul>
-                     <ul id="event" name="event" class="item ece"><input type="checkbox" name="event[]" value="Buzzy,ece"> Buzzy</ul>
-                     <ul id="event" name="event" class="item eee"><input type="checkbox" name="event[]" value="Paper Presentation,eee"> Paper Presentation</ul>
-                     <ul id="event" name="event" class="item eee"><input type="checkbox" name="event[]" value="Binary Blast,eee"> Binary Blast</ul>
-                     <ul id="event" name="event" class="item eee"><input type="checkbox" name="event[]" value="Tech kriti,eee"> Tech kriti</ul>
-                     <ul id="event" name="event" class="item eee"><input type="checkbox" name="event[]" value="Eureka Quest,eee"> Eureka Quest</ul>
+                     <ul id="event" name="event" class="item eee"><input type="checkbox" name="event[]" value="Paper Presentation,ece"> Current Xplore</ul>
+                     <ul id="event" name="event" class="item eee"><input type="checkbox" name="event[]" value="Electritech Expo,ece"> Electritech Expo</ul>
+                     <ul id="event" name="event" class="item eee"><input type="checkbox" name="event[]" value="Miniute To Win It,ece"> Miniute To Win It</ul>
+                     <ul id="event" name="event" class="item eee"><input type="checkbox" name="event[]" value="Buzzy,ece"> Buzzy</ul>
+                     <ul id="event" name="event" class="item ece"><input type="checkbox" name="event[]" value="Paper Presentation,eee"> Paper Presentation</ul>
+                     <ul id="event" name="event" class="item ece"><input type="checkbox" name="event[]" value="Binary Blast,eee"> Binary Blast</ul>
+                     <ul id="event" name="event" class="item ece"><input type="checkbox" name="event[]" value="Tech kriti,eee"> Tech kriti</ul>
+                     <ul id="event" name="event" class="item ece"><input type="checkbox" name="event[]" value="Eureka Quest,eee"> Eureka Quest</ul>
                      <ul id="event" name="event" class="item mech"><input type="checkbox" name="event[]" value="Paper Presentation,mech"> Mr.Lathe</ul>
 
                      <ul id="event" name="event" class="item mech"><input type="checkbox" name="event[]" value="Cad Modeling,mech"> Cad Modeling</ul>
