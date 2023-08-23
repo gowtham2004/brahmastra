@@ -158,11 +158,48 @@
                <br>
                  <p style="color: red;">Note : Pay The Registration fee 250 per canditate. use the above qr code and enter the Transaction id below and upload the evidence</p>
                  <div class="row form-group">
-                  <div class="col-md-12">
-                    <label for="subject">Upload Proof * </label>
-                    <input type="file" name="image" id="image" accept="image/*" class="form-control" required="">
-                  </div>
-                </div>
+  <div class="col-md-12">
+    <label for="subject">Upload Proof *</label>
+    <input type="file" name="image" id="image" accept="image/*" class="form-control" required="">
+  </div>
+</div>
+<div class="row form-group">
+  <div class="col-md-12">
+    <label for="uploaded-image">Uploaded Image</label>
+    <div id="uploaded-image-container">
+      <!-- Placeholder for the uploaded image -->
+    </div>
+  </div>
+</div>
+<script>
+  const imageInput = document.getElementById("image");
+  const uploadedImageContainer = document.getElementById("uploaded-image-container");
+
+  imageInput.addEventListener("change", (event) => {
+    const selectedImage = event.target.files[0];
+
+    if (selectedImage) {
+      const imageElement = document.createElement("img");
+      imageElement.src = URL.createObjectURL(selectedImage);
+      imageElement.classList.add("uploaded-image");
+      
+      // Clear previously uploaded images
+      uploadedImageContainer.innerHTML = "";
+      
+      uploadedImageContainer.appendChild(imageElement);
+    } else {
+      uploadedImageContainer.innerHTML = "";
+    }
+  });
+</script>
+<style>
+  .uploaded-image {
+    max-width: 100%;
+    max-height: 200px; /* Adjust the height as needed */
+    margin-top: 10px;
+  }
+</style>
+
                 <div class="row form-group">
                   <div class="col-md-12">
                     <label for="subject">Reference ID * </label>
