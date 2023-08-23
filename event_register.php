@@ -42,25 +42,25 @@
                <div class="row form-group">
                  <div class="col-md-6 mb-3 mb-md-0">
                    <label for="fname">First Name</label>
-                   <input type="text" name="firstName" id="fname" required="" class="form-control" placeholder="Enter FirstName Here">
+                   <input type="text" name="firstName" id="fname" required="" class="form-control" placeholder="Enter First Name Here" pattern="[A-Za-z ]+" title="Only letters and spaces are allowed">
                  </div>
                  <div class="col-md-6">
                    <label for="lname">Last Name</label>
-                   <input type="text" name="lastName" id="lname" required="" class="form-control" placeholder="Enter LastName Here">
+                   <input type="text" name="lastName" id="lname" required="" class="form-control" placeholder="Enter Last Name Here" pattern="[A-Za-z ]+" title="Only letters and spaces are allowed">
                  </div>
                </div>
 
               <div class="row form-group">
                  <div class="col-md-12">
                    <label for="email">Email</label>
-                   <input type="email" name="email" id="email" required="" class="form-control" placeholder="Enter Your Email Here">
+                   <input type="email" name="email" id="email" required="" class="form-control" placeholder="Enter Your Email Here" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Enter a valid email address">
                  </div>
               </div>
 
               <div class="row form-group">
                 <div class="col-md-12">
                   <label for="phone">Mobile No</label>
-                  <input type="phone" name="phone" id="phone" required="" class="form-control" placeholder="Enter Your Mobile No Here">
+                  <input type="tel" name="mobile" id="mobile" required="" class="form-control" placeholder="Enter Your Mobile Number Here" pattern="[0-9]{10}" title="Enter a 10-digit mobile number">
                 </div>
               </div>
               <br>
@@ -129,7 +129,7 @@
                  <div class="col-md-12">        
                    <label for="subject">Event</label>
                    <li name="event" id="itemList">
-                     <ul id="event" name="event" class="item cse"><input type="checkbox" name="event[]" value="Paperio,cse"> Paperio</ul>
+                     <ul id="event" name="event" class="item cse"><input type="checkbox" name="event[]" value="Paper Presentation,cse"> Paperio</ul>
                      <ul id="event" name="event" class="item cse"><input type="checkbox" name="event[]" value="Techcrack,cse"> Techcrack</ul>
                      <ul id="event" name="event" class="item cse"><input type="checkbox" name="event[]" value="Postero,cse"> Postero</ul>
                      <ul id="event" name="event" class="item cse"><input type="checkbox" name="event[]" value="Thegidi,cse"> Thegidi</ul>
@@ -137,7 +137,7 @@
                      <ul id="event" name="event" class="item aids"><input type="checkbox" name="event[]" value="AI Quiz,aids"> AI Quiz</ul>
                      <ul id="event" name="event" class="item aids"><input type="checkbox" name="event[]" value="Bug Finder,aids"> Bug Finder</ul>
                      <ul id="event" name="event" class="item aids"><input type="checkbox" name="event[]" value="Bidding War,aids"> Bidding War</ul>
-                     <ul id="event" name="event" class="item ece"><input type="checkbox" name="event[]" value="Current Xplore,ece"> Current Xplore</ul>
+                     <ul id="event" name="event" class="item ece"><input type="checkbox" name="event[]" value="Paper Presentation,ece"> Current Xplore</ul>
                      <ul id="event" name="event" class="item ece"><input type="checkbox" name="event[]" value="Electritech Expo,ece"> Electritech Expo</ul>
                      <ul id="event" name="event" class="item ece"><input type="checkbox" name="event[]" value="Miniute To Win It,ece"> Miniute To Win It</ul>
                      <ul id="event" name="event" class="item ece"><input type="checkbox" name="event[]" value="Buzzy,ece"> Buzzy</ul>
@@ -145,9 +145,12 @@
                      <ul id="event" name="event" class="item eee"><input type="checkbox" name="event[]" value="Binary Blast,eee"> Binary Blast</ul>
                      <ul id="event" name="event" class="item eee"><input type="checkbox" name="event[]" value="Tech kriti,eee"> Tech kriti</ul>
                      <ul id="event" name="event" class="item eee"><input type="checkbox" name="event[]" value="Eureka Quest,eee"> Eureka Quest</ul>
+                     <ul id="event" name="event" class="item mech"><input type="checkbox" name="event[]" value="Paper Presentation,mech"> Mr.Lathe</ul>
+
                      <ul id="event" name="event" class="item mech"><input type="checkbox" name="event[]" value="Cad Modeling,mech"> Cad Modeling</ul>
                      <ul id="event" name="event" class="item mech"><input type="checkbox" name="event[]" value="Water Rocketry,mech"> Water Rocketry</ul>
                      <ul id="event" name="event" class="item mech"><input type="checkbox" name="event[]" value="Mr.Lathe,mech"> Mr.Lathe</ul>
+
                    </li>
                  </div>
                 </div>
