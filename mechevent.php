@@ -68,7 +68,8 @@ function closeNav() {
 	
 <div id="cse" class="clearfix grid">
     <h3></h3><h3></h3><h3></h3>
-    <h2 align="center" style="color: white">DEPARTMENT OF MECH</h2>
+    <?php if(isset($_SESSION['login_status'])){ ?> <h3 align="center" style="color: black" >Welcome <?php echo($_SESSION['login_user']); ?></h3> <?php } ?>
+    <h2 align="center" style="color: black">DEPARTMENT OF EEE</h2>
     <div class="figure-container">
       <figure class="effect-oscar wowload fadeInUp">
         <img src="images/portfolio/1.jpeg" height="300px" width="100%" alt="img01"/>
@@ -109,9 +110,6 @@ function closeNav() {
                 <a data-toggle="modal" data-target="#mymech4">View more</a></p>
             </figcaption>
         </figure>
-
-        
-
         
     </div>
 </div>
