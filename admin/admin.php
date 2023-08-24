@@ -1,3 +1,7 @@
+<?php 
+    include("config.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -265,7 +269,19 @@
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                                 B.Tech AI&DS</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">40</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                                <?php
+                                                    $query = "SELECT COUNT(*) as total FROM event_register where event_dept = 'aids'";
+                                                    $stmt = $dbh->query($query);
+                                                    $stmt->execute();
+                                                    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                                                    if($stmt->rowCount() > 0){
+                                                        foreach ($result as $row) {
+                                                            echo($row['total']." Memebers");
+                                                         }
+                                                    }
+                                                ?>
+                                            </div>
                                         </div>
                                         <div class="col-auto">
                                             
@@ -284,7 +300,19 @@
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                                 B.E CSE</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">215</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                                <?php
+                                                    $query = "SELECT COUNT(*) as total FROM event_register where event_dept = 'cse'";
+                                                    $stmt = $dbh->query($query);
+                                                    $stmt->execute();
+                                                    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                                                    if($stmt->rowCount() > 0){
+                                                        foreach ($result as $row) {
+                                                            echo($row['total']." Memebers");
+                                                         }
+                                                    }
+                                                ?>
+                                            </div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-laptop fa-2x text-gray-300 "></i>
@@ -304,7 +332,19 @@
                                             </div>
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">
+                                                    <?php
+                                                    $query = "SELECT COUNT(*) as total FROM event_register where event_dept = 'ece'";
+                                                    $stmt = $dbh->query($query);
+                                                    $stmt->execute();
+                                                    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                                                    if($stmt->rowCount() > 0){
+                                                        foreach ($result as $row) {
+                                                            echo($row['total']." Memebers");
+                                                         }
+                                                    }
+                                                    ?>
+                                                    </div>
                                                 </div>
                                                 <div class="col">
                                                    
@@ -328,7 +368,19 @@
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
                                                 B.E EEE</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                            <?php
+                                                    $query = "SELECT COUNT(*) as total FROM event_register where event_dept = 'eee'";
+                                                    $stmt = $dbh->query($query);
+                                                    $stmt->execute();
+                                                    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                                                    if($stmt->rowCount() > 0){
+                                                        foreach ($result as $row) {
+                                                            echo($row['total']." Memebers");
+                                                         }
+                                                    }
+                                                ?>
+                                            </div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-microchip fa-2x text-gray-300"></i>
@@ -345,7 +397,19 @@
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
                                                 B.E MECH</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                            <?php
+                                                    $query = "SELECT COUNT(*) as total FROM event_register where event_dept = 'mech'";
+                                                    $stmt = $dbh->query($query);
+                                                    $stmt->execute();
+                                                    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                                                    if($stmt->rowCount() > 0){
+                                                        foreach ($result as $row) {
+                                                            echo($row['total']." Memebers");
+                                                         }
+                                                    }
+                                                ?>
+                                            </div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-cog fa-2x text-gray-300"></i>
@@ -360,12 +424,12 @@
 
                     <div class="row">
                         <!-- Area Chart -->
-                        <div class="col-xl-8 col-lg-7">
+                        <div class="col">
                             <div class="card shadow mb-4">
                                 <!-- Card Header - Dropdown -->
                                 <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Events Overview</h6>
                                     <div class="dropdown no-arrow">
                                         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -416,7 +480,6 @@
     
                                                 var data = [
                                                 <?php
-                                                    include("config.php"); 
                                                     $query = "SELECT COUNT(id) as total, DATE_FORMAT(insert_time, '%d-%m-%Y') as date FROM event_register GROUP BY date";
                                                     $stmt = $dbh->query($query);
                                                     $stmt->execute();
@@ -530,107 +593,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Pie Chart -->
-                        <div class="col-xl-4 col-lg-5">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
-                                    <div class="dropdown no-arrow">
-                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                                            aria-labelledby="dropdownMenuLink">
-                                            <div class="dropdown-header">Dropdown Header:</div>
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <!-- Styles -->
-                                    <style>
-                                        #chart {
-                                            width: 100%;
-                                            height: 500px;
-                                        }
-                                    </style>
-
-                                    <!-- Resources -->
-                                    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
-                                    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
-                                    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
-
-                                    <!-- Chart code -->
-                                    <script>
-                                        am5.ready(function() {
-
-                                            // Create root element
-                                            // https://www.amcharts.com/docs/v5/getting-started/#Root_element
-                                            var root = am5.Root.new("chartdiv1");
-
-                                            // Set themes
-                                            // https://www.amcharts.com/docs/v5/concepts/themes/
-                                            root.setThemes([
-                                                am5themes_Animated.new(root)
-                                            ]);
-
-                                            // Create chart
-                                            // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/
-                                            var chart = root.container.children.push(
-                                                am5percent.PieChart.new(root, {
-                                                    endAngle: 270
-                                                })
-                                            );
-
-                                            // Create series
-                                            // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Series
-                                            var series = chart.series.push(
-                                                am5percent.PieSeries.new(root, {
-                                                    valueField: "value",
-                                                    categoryField: "category",
-                                                    endAngle: 270
-                                                })
-                                            );
-
-                                            series.states.create("hidden", {
-                                                endAngle: -90
-                                            });
-
-                                            // Set data
-                                            // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Setting_data
-                                            series.data.setAll([
-                                                {
-                                                    category: "Lithuania",
-                                                    value: 501.9
-                                                }, {
-                                                    category: "Czechia",
-                                                    value: 301.9
-                                                }, {
-                                                    category: "Ireland",
-                                                    value: 201.1
-                                                }, {
-                                                    category: "Germany",
-                                                    value: 165.8
-                                                }]);
-
-                                            series.appear(1000, 100);
-
-                                        }); // end am5.ready()
-                                    </script>
-
-                                    <!-- HTML -->
-                                    <div id="chart"></div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
                     <!-- Content Row -->
@@ -645,6 +607,9 @@
                                     <h6 class="m-0 font-weight-bold text-primary">Projects</h6>
                                 </div>
                                 <div class="card-body">
+                                    <?php 
+                                        $aids = "SELECT COUNT(*) FROM ";
+                                    ?>
                                     <h4 class="small font-weight-bold">Server Migration <span
                                             class="float-right">20%</span></h4>
                                     <div class="progress mb-4">
@@ -675,6 +640,9 @@
                                         <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
                                             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
+                                    <?php 
+
+                                    ?>
                                 </div>
                             </div>
 
