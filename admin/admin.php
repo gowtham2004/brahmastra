@@ -428,6 +428,36 @@
                 </div>
             </div>
         </div>
+
+        <!--Total Amount -->
+        <div class="col-xl-3 col-md-6 mb-4 event-container">
+            <div class="card border-left-warning shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bolder text-warning text-uppercase mb-1">
+                                TOTAL AMOUNT RECEIVED</div>
+                                <h4 id="result" style="color:black"></h4>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                            <?php
+                                $query = "SELECT COUNT(DISTINCT reg_id) AS unique_count FROM event_register";
+                                $stmt = $dbh->query($query);
+                                    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+                                // Display the distinct data
+                                $multipliedResult = $result['unique_count'] * 250;
+                                    echo "<script>document.getElementById('result').textContent = '₹ " . $multipliedResult . "';</script>";
+                                            
+                            ?>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+                                
         
     </div>
 </div>
