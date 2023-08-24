@@ -1,5 +1,7 @@
-<?php 
-    include("config.php");
+<?php
+    session_start();
+    if(isset($_SESSION['admin_login'])){ 
+        include("config.php");
 ?>
 
 <!DOCTYPE html>
@@ -37,7 +39,7 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <img src="img/favicon.png" alt="CCET" height="50px" width="50px">
-                <div class="sidebar-brand-text mx-3">BR Admin</div>
+                <div class="sidebar-brand-text mx-3">CCET Admin</div>
             </a>
 
             <!-- Divider -->
@@ -831,7 +833,7 @@ $(document).ready(function() {
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="#">Logout</a>
+                    <a class="btn btn-primary" href="../logout.php">Logout</a>
                 </div>
             </div>
         </div>
@@ -857,3 +859,10 @@ $(document).ready(function() {
 </body>
 
 </html>
+
+<?php 
+    }
+    else {
+        header('Location: ../index.html');
+    }
+?>

@@ -5,7 +5,10 @@
         $pass = $_POST['pass'];
         if($user == "admin" && $pass == "1234"){
             $_SESSION['admin_login'] = TRUE;
-            header("Location: admin/admin.php");
+            header("Location: admin.php");
+        }
+        else {
+            echo("<script>alert('Wrong Username Or Password');</script>");
         }
     }
 ?>
