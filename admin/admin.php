@@ -607,13 +607,42 @@
                                     <h6 class="m-0 font-weight-bold text-primary">Projects</h6>
                                 </div>
                                 <div class="card-body">
-                                    <?php 
-                                        $aids = "SELECT COUNT(*) FROM ";
+                                    <?php
+                                        $result = ['aids','cse','ece','eee','mech'];
+                                        $data = [];
+                                        $cnt = 0;
+                                            foreach($result as $row) {
+                                                $dept= $row;
+                                                $query = "SELECT id FROM event_register WHERE event_dept = :dept";
+                                                $bht = $dbh->prepare($query);
+                                                $bht->bindParam(':dept',$dept, PDO::PARAM_STR);
+                                                $bht->execute();
+                                                if($bht->rowCount() > 0){
+                                                    $data[$dept] = intval($bht->rowCount());
+                                                }
+                                                else {
+                                                    $data[$dept] = 0;
+                                                }
+                                                $cnt = $cnt+1;
+                                            }
+                                        $query = "SELECT * FROM event_register";
+                                        $stmt = $dbh->query($query);
+                                        $stmt->execute();
+                                        if($stmt->rowCount() > 0){ 
+                                            $total = intval($stmt->rowCount());
+                                        }
+                                        $offset = 100/$total;
+                                        $aids = intval($data['aids']*$offset);
+                                        $cse = intval($data['cse']*$offset);
+                                        $ece = intval($data['ece']*$offset);
+                                        $eee = intval($data['eee']*$offset);
+                                        $mech = intval($data['mech']*$offset);
+                                        
                                     ?>
-                                    <h4 class="small font-weight-bold">Server Migration <span
-                                            class="float-right">20%</span></h4>
+                                    <h4 class="small font-weight-bold">aids<span
+                                            class="float-right"><?php echo($aids); ?></span></h4>
                                     <div class="progress mb-4">
-                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 20%"
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: <?php echo$aids;?>%"
                                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <h4 class="small font-weight-bold">Sales Tracking <span
