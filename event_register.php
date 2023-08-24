@@ -136,7 +136,7 @@
                      <ul id="event" name="event" class="item aids"><input type="checkbox" name="event[]" value="Paper Presentation,aids"> Paper Presentation</ul>
                      <ul id="event" name="event" class="item aids"><input type="checkbox" name="event[]" value="AI Quiz,aids"> AI Quiz</ul>
                      <ul id="event" name="event" class="item aids"><input type="checkbox" name="event[]" value="Bug Finder,aids"> Bug Finder</ul>
-                     <ul id="event" name="event" class="item aids"><input type="checkbox" name="event[]" value="Bidding War,aids"> Bidding War</ul>
+                     <ul id="event" name="event" class="item aids"><input type="checkbox" name="event[]" value="E-Sports,aids"> Bidding War</ul>
                      <ul id="event" name="event" class="item eee"><input type="checkbox" name="event[]" value="Paper Presentation,ece"> Current Xplore</ul>
                      <ul id="event" name="event" class="item eee"><input type="checkbox" name="event[]" value="Electritech Expo,ece"> Electritech Expo</ul>
                      <ul id="event" name="event" class="item eee"><input type="checkbox" name="event[]" value="Miniute To Win It,ece"> Miniute To Win It</ul>
@@ -145,7 +145,6 @@
                      <ul id="event" name="event" class="item ece"><input type="checkbox" name="event[]" value="Binary Blast,eee"> Binary Blast</ul>
                      <ul id="event" name="event" class="item ece"><input type="checkbox" name="event[]" value="Tech kriti,eee"> Tech kriti</ul>
                      <ul id="event" name="event" class="item ece"><input type="checkbox" name="event[]" value="Eureka Quest,eee"> Eureka Quest</ul>
-<<<<<<< HEAD
                      <ul id="event" name="event" class="item mech"><input type="checkbox" name="event[]" value="Paper Presentation,mech"> Paper Presentation</ul>
                      <ul id="event" name="event" class="item mech"><input type="checkbox" name="event[]" value="Cad Modeling,mech"> Cad Modeling</ul>
                      <ul id="event" name="event" class="item mech"><input type="checkbox" name="event[]" value="Water Rocketry,mech"> Water Rocketry</ul>

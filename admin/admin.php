@@ -1,7 +1,7 @@
 <?php
     session_start();
     if(isset($_SESSION['admin_login'])){ 
-        include("config.php");
+        include("../includes/config.php");
 ?>
 
 <!DOCTYPE html>

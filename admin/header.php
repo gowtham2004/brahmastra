@@ -38,10 +38,10 @@
         <div id="collapseaids" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">EVENTS</h6>
-                <a class="collapse-item" href="event_details.php?parameter=aids,paperpresentation">Paper Presentation</a>
-                <a class="collapse-item" href="event_details.php?parameter=aids,aiquiz">AI Quiz</a>
-                <a class="collapse-item" href="event_details.php?parameter=aids,bugfinder">Bug Finder</a>
-                <a class="collapse-item" href="event_details.php?parameter=aids,esports">E-sports</a>
+                <a class="collapse-item" href="event_details.php?parameter=aids,Paper Presentation">Paper Presentation</a>
+                <a class="collapse-item" href="event_details.php?parameter=aids,AI Quiz">AI Quiz</a>
+                <a class="collapse-item" href="event_details.php?parameter=aids,Bug Finder">Bug Finder</a>
+                <a class="collapse-item" href="event_details.php?parameter=aids,E-Sports">E-sports</a>
             </div>
         </div>
     </li>
@@ -55,10 +55,10 @@
         <div id="collapsecse" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">EVENTS</h6>
-                <a class="collapse-item" href="event_details.php?parameter=cse,paperio">Paperio</a>
-                <a class="collapse-item" href="event_details.php?parameter=cse,techcrack">Tech Crack</a>
-                <a class="collapse-item" href="event_details.php?parameter=cse,postero">Postero</a>
-                <a class="collapse-item" href="event_details.php?parameter=cse,thegidi">Thegidi</a>
+                <a class="collapse-item" href="event_details.php?parameter=cse,Paperio">Paperio</a>
+                <a class="collapse-item" href="event_details.php?parameter=cse,Techcrack">Tech Crack</a>
+                <a class="collapse-item" href="event_details.php?parameter=cse,Postero">Postero</a>
+                <a class="collapse-item" href="event_details.php?parameter=cse,Thegidi">Thegidi</a>
             </div>
         </div>
     </li>
@@ -72,10 +72,10 @@
         <div id="collapseece" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">EVENTS</h6>
-                <a class="collapse-item" href="event_details.php?parameter=ece,paperpresentation">Paper Presentation</a>
-                <a class="collapse-item" href="event_details.php?parameter=ece,binaryblast">Binary Blast</a>
-                <a class="collapse-item" href="event_details.php?parameter=ece,techkriti">Tech Kriti</a>
-                <a class="collapse-item" href="event_details.php?parameter=ece,eurekaquest">Eureka Quest</a>
+                <a class="collapse-item" href="event_details.php?parameter=ece,Paper Presentation">Paper Presentation</a>
+                <a class="collapse-item" href="event_details.php?parameter=ece,Binary Blast">Binary Blast</a>
+                <a class="collapse-item" href="event_details.php?parameter=ece,Tech Kriti">Tech Kriti</a>
+                <a class="collapse-item" href="event_details.php?parameter=ece,Eureka Quest">Eureka Quest</a>
             </div>
         </div>
     </li>
@@ -90,10 +90,10 @@
             data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">EVENTS</h6>
-                <a class="collapse-item" href="event_details.php?parameter=eee,currentexplore">Current Xplore</a>
-                <a class="collapse-item" href="event_details.php?parameter=eee,electritechexpo">Electritech Expo</a>
-                <a class="collapse-item" href="event_details.php?parameter=eee,minutetowinit">Minute To Win It</a>
-                <a class="collapse-item" href="event_details.php?parameter=eee,buzzy">Buzzy</a>
+                <a class="collapse-item" href="event_details.php?parameter=eee,Current Explore">Current Xplore</a>
+                <a class="collapse-item" href="event_details.php?parameter=eee,Electritech Expo">Electritech Expo</a>
+                <a class="collapse-item" href="event_details.php?parameter=eee,Minute To Win It">Minute To Win It</a>
+                <a class="collapse-item" href="event_details.php?parameter=eee,Buzzy">Buzzy</a>
             </div>
         </div>
     </li>
@@ -107,10 +107,10 @@
         <div id="collapsemech" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">EVENTS</h6>
-                <a class="collapse-item" href="event_details.php?parameter=mech,paperpresentation">Paper Presentation</a>
-                <a class="collapse-item" href="event_details.php?parameter=mech,cadmodeling">CAD Modeling</a>
-                <a class="collapse-item" href="event_details.php?parameter=mech,waterrocketry">Water Rocketry</a>
-                <a class="collapse-item" href="event_details.php?parameter=mech,mrlathe">Mr. Lathe</a>
+                <a class="collapse-item" href="event_details.php?parameter=mech,Paper Presentation">Paper Presentation</a>
+                <a class="collapse-item" href="event_details.php?parameter=mech,Cad Modeling">CAD Modeling</a>
+                <a class="collapse-item" href="event_details.php?parameter=mech,Water Rocketry">Water Rocketry</a>
+                <a class="collapse-item" href="event_details.php?parameter=mech,Mr.Lathe">Mr. Lathe</a>
             </div>
         </div>
     </li>

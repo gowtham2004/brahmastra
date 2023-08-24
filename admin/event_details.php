@@ -1,10 +1,29 @@
 <?php
-    if(isset($_GET['parameter'])){
-        include_once("../includes/config.php");
-        $param = $_GET['parameter'];
-        $data = explode(",",$param);
-        $event_dept = $data[0];
-        $event_name = $data[1];
+if(isset($_GET['parameter'])){
+    $param = $_GET['parameter'];
+    $data = explode(",",$param);
+    $event_dept = $data[0];
+    $event_name = $data[1];
+    include_once("../includes/config.php");
+    if(isset($_GET['inid'])) {
+        $id=$_GET['inid'];
+        $status=0;
+        $sql = "update login_register set log_status=:status WHERE id=:id";
+        $query = $dbh->prepare($sql);
+        $query -> bindParam(':id',$id, PDO::PARAM_STR);
+        $query -> bindParam(':status',$status, PDO::PARAM_STR);
+        $query -> execute();
+    }
+
+    if(isset($_GET['id'])) {
+        $id=$_GET['id'];
+        $status=1;
+        $sql = "update login_register set log_status=:status WHERE id=:id";
+        $query = $dbh->prepare($sql);
+        $query -> bindParam(':id',$id, PDO::PARAM_STR);
+        $query -> bindParam(':status',$status, PDO::PARAM_STR);
+        $query -> execute();
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -57,15 +76,20 @@
 <table class="table table-striped table-class" id= "table-id">	
 <thead>
     <tr>
+		<th>Reg_ID</th>
 		<th>Name</th>
 		<th>Email</th>
 		<th>Phone</th>
-		<th>Date</th>
+        <th>Stud_Dept</th>
+        <th>College</th>
+        <th>Year</th>
+        <th>Trans_ID</th>
+        <th>Action</th>
 	</tr>
     </thead>
     <tbody>
         <?php 
-            $query = "SELECT * FROM event_register WHERE event_dept = :dept AND event_name = :event_name";
+            $query = "SELECT event_register.*,login_register.log_status AS stat  FROM event_register JOIN login_register ON event_register.user_id = login_register.id WHERE event_dept = :dept AND event_name = :event_name";
             $stmt = $dbh->prepare($query);
             $stmt->bindParam(':dept', $data[0]);
             $stmt->bindParam(':event_name', $data[1]);
@@ -74,10 +98,21 @@
             if($stmt->rowCount() > 0){
             foreach ($result as $row) { ?>
             <tr>
+                <td><?php echo $row["reg_id"]; ?></td>
                 <td><?php echo $row["username"]; ?></td>
-                <td><?php echo $row["event_name"]; ?></td>
-                <td><?php echo $row["event_dept"]; ?></td>
+                <td><?php echo $row["email"]; ?></td>
+                <td><?php echo $row["phone"]; ?></td>
                 <td><?php echo $row["dept"]; ?></td>
+                <td><?php echo $row["college"]; ?></td>
+                <td><?php echo $row["year"]; ?></td>
+                <td><?php echo $row["tran_id"]; ?></td>
+                <td>
+                    <?php if($row['stat'] == 1) { ?>
+                        <a href="event_details.php?parameter=<?php echo $param; ?>&<?php echo $param; ?>&inid=<?php echo $row['user_id'];?>"><button class="btn btn-danger" onclick="return confirm('Are you sure you want to checkout this canditate?');"> Check_Out</button>
+                    <?php } else {?>
+                        <a href="event_details.php?parameter=<?php echo $param; ?>&<?php echo $param; ?>&id=<?php echo $row['user_id'];?>"><button class="btn btn-success" onclick="return confirm('Are you sure you want to checkin this canditate?');"> Check_IN</button> 
+                    <?php } ?>
+                </td>
             </tr>
         <?php } } ?>
     <tbody>
