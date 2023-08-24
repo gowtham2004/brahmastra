@@ -145,8 +145,7 @@
                      <ul id="event" name="event" class="item ece"><input type="checkbox" name="event[]" value="Binary Blast,eee"> Binary Blast</ul>
                      <ul id="event" name="event" class="item ece"><input type="checkbox" name="event[]" value="Tech kriti,eee"> Tech kriti</ul>
                      <ul id="event" name="event" class="item ece"><input type="checkbox" name="event[]" value="Eureka Quest,eee"> Eureka Quest</ul>
-                     <ul id="event" name="event" class="item mech"><input type="checkbox" name="event[]" value="Paper Presentation,mech"> Mr.Lathe</ul>
-
+                     <ul id="event" name="event" class="item mech"><input type="checkbox" name="event[]" value="Paper Presentation,mech"> Paper Presentation</ul>
                      <ul id="event" name="event" class="item mech"><input type="checkbox" name="event[]" value="Cad Modeling,mech"> Cad Modeling</ul>
                      <ul id="event" name="event" class="item mech"><input type="checkbox" name="event[]" value="Water Rocketry,mech"> Water Rocketry</ul>
                      <ul id="event" name="event" class="item mech"><input type="checkbox" name="event[]" value="Mr.Lathe,mech"> Mr.Lathe</ul>
