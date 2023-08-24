@@ -26,7 +26,7 @@
 <body>
     <div class="wrapper">
         <form action="admin_login.php" method="POST">
-        <h1>Login</h1>
+        <h1>Admin Login</h1>
         <div class="input-box">
             <input type="text" placeholder="Username" name="user" required>
             <i class='bx bxs-user'></i>     
