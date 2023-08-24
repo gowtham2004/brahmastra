@@ -1,5 +1,5 @@
 <?php session_start();
-  if(isset($_SESSION['login_status'])) {
+  if(!isset($_SESSION['event_status'])) {
 ?>
 
 <!DOCTYPE html>

@@ -15,7 +15,7 @@
                 <!-- Nav Starts -->
                 <div class="navbar-collapse  collapse">
                   <ul class="nav navbar-nav navbar-right ">
-                  <li ><a href="student_dashboard.php">DASHBOARD</a></li>
+                  <?php if(isset($_SESSION['event_status'])) { ?> <li ><a href="student_dashboard.php">DASHBOARD</a></li> <?php } ?>
 
                     <li ><a href="aidsevent.php">AI&DS</a></li>
                     <li ><a href="cseevent.php">CSE</a></li>

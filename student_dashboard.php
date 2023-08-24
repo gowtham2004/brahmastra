@@ -1,6 +1,7 @@
 <?php 
   session_start();
-  include("includes/config.php"); 
+  include("includes/config.php");
+  if(isset($_SESSION['event_status'])) { 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -169,3 +170,10 @@ function closeNav() {
 </body>
 <?php include("includes/login_signup_page.php"); ?>
 </html>
+
+<?php }
+    else{
+        header("Location:cseevent.php");
+    }
+
+?>
