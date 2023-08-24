@@ -1,4 +1,7 @@
-<?php session_start(); ?>
+<?php 
+  session_start();
+  include("includes/config.php"); 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,25 +52,87 @@ function closeNav() {
 
 </head>
 
-<body  >
-  <div id="loader-wrapper">
-    <div id="loader"></div>
+<body>
+  <!-- <div id="loader-wrapper">
+  <div id="loader"></div>
   <div class="loader-section section-left"></div>
   <div class="loader-section section-right"></div>
-</div>
+  </div> -->
 <div class="topbar animated fadeInLeftBig"></div>
 
 <!-- Header Starts -->
 <?php include("includes/header.php"); ?>
 <!-- #Header Starts -->
 
-<h3></h3>
-<!--<h2 align=center>Computer Science Engineering</h2>
--->
-     
-    </div>
-
-  </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="cse" class="clearfix grid" style="padding:50px;">
+<div class="row">
+                <div class="col-md-12">
+                    <!-- Advanced Tables -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                          Events Registered 
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Reg ID</th>
+                                            <th>Canditate Name</th>
+                                            <th>Student Department</th>
+                                            <th>Student Instution</th>
+                                            <th>Student year</th>
+                                            <th>Event Department</th>
+                                            <th>Event Name</th>
+                                            <th>Transaction ID</th>
+                                            <th>Registered Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php
+                                          $sql = "SELECT * FROM event_register where user_id = :user";
+                                          $query = $dbh->prepare($sql);
+                                          $user_id = $_SESSION['login_ID'];
+                                          $query->bindparam(':user',$user_id,PDO::PARAM_STR);
+                                          $query->execute();
+                                          $results=$query->fetchAll(PDO::FETCH_OBJ);
+                                          $cnt=1;
+                                          if($query->rowCount() > 0)
+                                          {
+                                            foreach($results as $result)
+                                            { ?>                                      
+                                        <tr class="odd gradeX">
+                                            <td class="center"><?php echo htmlentities($cnt);?></td>
+                                            <td class="center"><?php echo htmlentities($result->reg_id);?></td>
+                                            <td class="center"><?php echo htmlentities($result->username);?></td>
+                                            <td class="center"><?php echo htmlentities($result->dept);?></td>
+                                            <td class="center"><?php echo htmlentities($result->college);?></td>
+                                            <td class="center"><?php echo htmlentities($result->year);?></td>
+                                            <td class="center"><?php echo htmlentities($result->event_dept);?></td>
+                                            <td class="center"><?php echo htmlentities($result->event_name);?></td>
+                                            <td class="center"><?php echo htmlentities($result->tran_id);?></td>
+                                            <td class="center"><?php echo htmlentities($result->insert_time);?></td>
+                                        </tr>
+                                        <?php $cnt=$cnt+1;}} ?>                                      
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!--End Advanced Tables -->
+                </div>
+            </div>
 </div>
 
 

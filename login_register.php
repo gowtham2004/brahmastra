@@ -20,8 +20,9 @@
             $result = $query->execute();
             if($result){
                 echo("<script>alert('inserted');</script>");
-                $query = "SELECT id FROM login_register where username = '$userName'";
+                $query = "SELECT id FROM login_register where username=:userName";
                 $stmt = $dbh->prepare($query);
+                $stmt->bindParam(':userName',$userName,PDO::PARAM_STR);
                 $stmt->execute();
                 $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 foreach($result as $row){

@@ -68,8 +68,8 @@
               <div class="row form-group">
                 <div class="col-md-12">
                   <label for="subject">Department Of Study</label>
-                  <select id="selectWithInput" class="selectText" required="" name="depart" onchange="handleSelectChange()">
-                  <option value="" selected disabled>Select Department </option>
+                  <select id="selectWithInput" class="selectText" required="" name="dept" onchange="handleSelectChange()">
+                      <option value="" selected disabled>Select Department </option>
                       <option value="B.E CSE" class="form-control">B.E CSE </option>
                       <option value="B.E EEE" class="form-control">B.E EEE </option>
                       <option value="B.E ECE" class="form-control">B.E ECE </option>

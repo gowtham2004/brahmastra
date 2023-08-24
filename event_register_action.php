@@ -7,7 +7,8 @@
     $email = $_POST['email'];
     $phone = $_POST['mobile'];
     $college = $_POST['inst'];
-    $dept  = $_POST['depart'];
+    if(isset($_POST['dept'])) { $dept = $_POST['dept']; }
+    else { $dept = $_POST['depart']; }
     $year = $_POST['year'];
     $event = $_POST['event'];
     $trans_id = $_POST['trans_id'];
