@@ -257,168 +257,221 @@
                         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
                     </div>
-
                     <!-- Content Row -->
-                    <div class="row">
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                B.Tech AI&DS</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                                <?php
-                                                    $query = "SELECT COUNT(*) as total FROM event_register where event_dept = 'aids'";
-                                                    $stmt = $dbh->query($query);
-                                                    $stmt->execute();
-                                                    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-                                                    if($stmt->rowCount() > 0){
-                                                        foreach ($result as $row) {
-                                                            echo($row['total']." Memebers");
-                                                         }
-                                                    }
-                                                ?>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto">
-                                            
-                                            <i class="fas fa-robot fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="container">
+    <div class="row">
+        <!-- Container 1 -->
+        <div class="col-xl-3 col-md-6 mb-4 event-container">
+            <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                B.Tech AI&DS</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">40</div>
                         </div>
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-success shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                B.E CSE</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                                <?php
-                                                    $query = "SELECT COUNT(*) as total FROM event_register where event_dept = 'cse'";
-                                                    $stmt = $dbh->query($query);
-                                                    $stmt->execute();
-                                                    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-                                                    if($stmt->rowCount() > 0){
-                                                        foreach ($result as $row) {
-                                                            echo($row['total']." Memebers");
-                                                         }
-                                                    }
-                                                ?>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-laptop fa-2x text-gray-300 "></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-info shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">B.E ECE
-                                            </div>
-                                            <div class="row no-gutters align-items-center">
-                                                <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">
-                                                    <?php
-                                                    $query = "SELECT COUNT(*) as total FROM event_register where event_dept = 'ece'";
-                                                    $stmt = $dbh->query($query);
-                                                    $stmt->execute();
-                                                    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-                                                    if($stmt->rowCount() > 0){
-                                                        foreach ($result as $row) {
-                                                            echo($row['total']." Memebers");
-                                                         }
-                                                    }
-                                                    ?>
-                                                    </div>
-                                                </div>
-                                                <div class="col">
-                                                   
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto">
-                                        
-                                            <i class="fas fa-satellite-dish fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Pending Requests Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-warning shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                B.E EEE</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                            <?php
-                                                    $query = "SELECT COUNT(*) as total FROM event_register where event_dept = 'eee'";
-                                                    $stmt = $dbh->query($query);
-                                                    $stmt->execute();
-                                                    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-                                                    if($stmt->rowCount() > 0){
-                                                        foreach ($result as $row) {
-                                                            echo($row['total']." Memebers");
-                                                         }
-                                                    }
-                                                ?>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-microchip fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-warning shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                B.E MECH</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                            <?php
-                                                    $query = "SELECT COUNT(*) as total FROM event_register where event_dept = 'mech'";
-                                                    $stmt = $dbh->query($query);
-                                                    $stmt->execute();
-                                                    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-                                                    if($stmt->rowCount() > 0){
-                                                        foreach ($result as $row) {
-                                                            echo($row['total']." Memebers");
-                                                         }
-                                                    }
-                                                ?>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-cog fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="col-auto dropdown-container">
+                            <i class="fas fa-robot fa-2x text-gray-300"></i>
+                            <div class="dropdown-content">
+                                <!-- Event details will be dynamically added here -->
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Container 2 -->
+        <div class="col-xl-3 col-md-6 mb-4 event-container">
+            <div class="card border-left-success shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                B.E CSE</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">215</div>
+                        </div>
+                        <div class="col-auto dropdown-container">
+                            <i class="fas fa-laptop fa-2x text-gray-300"></i>
+                            <div class="dropdown-content">
+                                <!-- Event details will be dynamically added here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Container 3 -->
+        <div class="col-xl-3 col-md-6 mb-4 event-container">
+            <div class="card border-left-info shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">B.E ECE
+                            </div>
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-auto">
+                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                                </div>
+                                <div class="col">
+                                    <!-- Additional content for container 3 -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto dropdown-container">
+                            <i class="fas fa-satellite-dish fa-2x text-gray-300"></i>
+                            <div class="dropdown-content">
+                                <!-- Event details will be dynamically added here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Container 4 -->
+        <div class="col-xl-3 col-md-6 mb-4 event-container">
+            <div class="card border-left-warning shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                B.E EEE</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                        </div>
+                        <div class="col-auto dropdown-container">
+                            <i class="fas fa-microchip fa-2x text-gray-300"></i>
+                            <div class="dropdown-content">
+                                <!-- Event details will be dynamically added here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Container 5 -->
+        <div class="col-xl-3 col-md-6 mb-4 event-container">
+            <div class="card border-left-warning shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                B.E MECH</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                        </div>
+                        <div class="col-auto dropdown-container">
+                            <i class="fas fa-cog fa-2x text-gray-300"></i>
+                            <div class="dropdown-content">
+                                <!-- Event details will be dynamically added here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .event-container {
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+
+/* Style for dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    z-index: 1;
+}
+
+/* Show dropdown content on hover */
+.event-container:hover .dropdown-content {
+    display: block;
+}
+</style>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    var eventDataSets = [
+        [
+            { eventName: "Paper Presentation", count: 15 },
+            { eventName: "AI Quiz", count: 25 },
+            { eventName: "Bug Finder", count: 10 },
+            { eventName: "E Sports", count: 10 }
+
+            // Add more event data as needed for container 1
+        ],
+        [
+            { eventName: "Paperio", count: 8 },
+            { eventName: "Tech Crack", count: 12 },
+            { eventName: "Postero", count: 20 },
+            { eventName: "Thegidi", count: 10 }
+
+            // Add more event data as needed for container 2
+        ],
+         [
+            { eventName: "Paper Presentation", count: 8 },
+            { eventName: "Binary Blast", count: 12 },
+            { eventName: "Tech Kriti", count: 20 },
+            { eventName: "Eureka Quest", count: 10 }
+
+            // Add more event data as needed for container 2
+        ],
+         [
+            { eventName: "Current Xplore", count: 8 },
+            { eventName: "Electritech Expo", count: 12 },
+            { eventName: "Minute To Win It", count: 20 },
+            { eventName: "Buzzy", count: 10 }
+
+            // Add more event data as needed for container 2
+        ],
+         [
+            { eventName: "paper Presentation", count: 8 },
+            { eventName: "CAD Modeling", count: 12 },
+            { eventName: "Water Rocketry", count: 20 },
+            { eventName: "Mr. Lathe", count: 10 }
+
+            // Add more event data as needed for container 2
+        ],
+        // ... Repeat the pattern for containers 3, 4, and 5
+    ];
+
+    $(".event-container").each(function(index) {
+        var dropdownContent = $("<div>").addClass("dropdown-content");
+        var eventData = eventDataSets[index];
+
+        // Populate dropdown content with event data
+        eventData.forEach(function(event) {
+            var eventEntry = $("<div>").text(event.eventName + ": " + event.count);
+            dropdownContent.append(eventEntry);
+        });
+
+        $(this).find(".dropdown-container").append(dropdownContent);
+
+        $(this).hover(
+            function() {
+                $(this).find(".dropdown-content").css("display", "block");
+            },
+            function() {
+                $(this).find(".dropdown-content").css("display", "none");
+            }
+        );
+    });
+});
+</script>
+
 
                     <!-- Content Row -->
 
@@ -607,66 +660,37 @@
                                     <h6 class="m-0 font-weight-bold text-primary">Projects</h6>
                                 </div>
                                 <div class="card-body">
-                                    <?php
-                                        $result = ['aids','cse','ece','eee','mech'];
-                                        $data = [];
-                                        $cnt = 0;
-                                            foreach($result as $row) {
-                                                $dept= $row;
-                                                $query = "SELECT id FROM event_register WHERE event_dept = :dept";
-                                                $bht = $dbh->prepare($query);
-                                                $bht->bindParam(':dept',$dept, PDO::PARAM_STR);
-                                                $bht->execute();
-                                                if($bht->rowCount() > 0){
-                                                    $data[$dept] = intval($bht->rowCount());
-                                                }
-                                                else {
-                                                    $data[$dept] = 0;
-                                                }
-                                                $cnt = $cnt+1;
-                                            }
-                                        $query = "SELECT * FROM event_register";
-                                        $stmt = $dbh->query($query);
-                                        $stmt->execute();
-                                        if($stmt->rowCount() > 0){ 
-                                            $total = intval($stmt->rowCount());
-                                        }
-                                        $offset = 100/$total;
-                                        $aids = intval($data['aids']*$offset);
-                                        $cse = intval($data['cse']*$offset);
-                                        $ece = intval($data['ece']*$offset);
-                                        $eee = intval($data['eee']*$offset);
-                                        $mech = intval($data['mech']*$offset);
-                                        
+                                    <?php 
+                                        $aids = "SELECT COUNT(*) FROM ";
                                     ?>
-                                    <h4 class="small font-weight-bold">B.TECH AIDS<span
-                                            class="float-right"><?php echo($aids);?>%</span></h4>
+                                    <h4 class="small font-weight-bold">Server Migration <span
+                                            class="float-right">20%</span></h4>
                                     <div class="progress mb-4">
-                                        <div class="progress-bar bg-danger" role="progressbar" style="width: <?php echo$aids;?>%"
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 20%"
                                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
-                                    <h4 class="small font-weight-bold">B.E CSE <span
-                                            class="float-right"><?php echo($cse);?>%</span></h4>
+                                    <h4 class="small font-weight-bold">Sales Tracking <span
+                                            class="float-right">40%</span></h4>
                                     <div class="progress mb-4">
-                                        <div class="progress-bar bg-warning" role="progressbar" style="width: <?php echo($cse);?>%"
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 40%"
                                             aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
-                                    <h4 class="small font-weight-bold">B.E ECE <span
-                                            class="float-right"><?php echo($ece);?>%</span></h4>
+                                    <h4 class="small font-weight-bold">Customer Database <span
+                                            class="float-right">60%</span></h4>
                                     <div class="progress mb-4">
-                                        <div class="progress-bar" role="progressbar" style="width: <?php echo($ece);?>%"
+                                        <div class="progress-bar" role="progressbar" style="width: 60%"
                                             aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
-                                    <h4 class="small font-weight-bold">B.E EEE <span
-                                            class="float-right"><?php echo($eee);?>%</span></h4>
+                                    <h4 class="small font-weight-bold">Payout Details <span
+                                            class="float-right">80%</span></h4>
                                     <div class="progress mb-4">
-                                        <div class="progress-bar bg-info" role="progressbar" style="width: <?php echo($eee);?>%"
+                                        <div class="progress-bar bg-info" role="progressbar" style="width: 80%"
                                             aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
-                                    <h4 class="small font-weight-bold">B.E MECH<span
-                                            class="float-right"><?php echo($mech);?>%</span></h4>
+                                    <h4 class="small font-weight-bold">Account Setup <span
+                                            class="float-right">Complete!</span></h4>
                                     <div class="progress">
-                                        <div class="progress-bar bg-success" role="progressbar" style="width: <?php echo($mech);?>%"
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
                                             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <?php 
