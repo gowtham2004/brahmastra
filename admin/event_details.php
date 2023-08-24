@@ -1,4 +1,6 @@
 <?php
+session_start();
+if($_SESSION['admin_login']){
 if(isset($_GET['parameter'])){
     $param = $_GET['parameter'];
     $data = explode(",",$param);
@@ -189,6 +191,10 @@ if(isset($_GET['parameter'])){
 
 <!--  Developed By Yasser Mas -->
 <?php 
+        }
+        else {
+            header('Location: admin.php');
+        }
     }
     else {
         header('Location: admin.php');
