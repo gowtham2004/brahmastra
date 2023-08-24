@@ -159,7 +159,7 @@
                  <p style="color: red;">Note : Pay The Registration fee 250 per canditate. use the above qr code and enter the Transaction id below and upload the evidence</p>
                  <div class="row form-group">
   <div class="col-md-12">
-    <label for="subject">Upload Proof *</label>
+    <label for="subject">Upload Proof of Payment *</label>
     <input type="file" name="image" id="image" accept="image/*" class="form-control" required="">
   </div>
 </div>
@@ -202,7 +202,7 @@
 
                 <div class="row form-group">
                   <div class="col-md-12">
-                    <label for="subject">Reference ID * </label>
+                    <label for="subject">Transaction Reference ID * </label>
                     <input type="text" name="trans_id" id="trans_id" class="form-control" required="" placeholder="Put Your Reference Id here">
                   </div>
                 </div>
@@ -239,11 +239,15 @@
 
 
            <div class="col-md-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
-             <div class="p-4 mb-3">
+             <div class="p-2 mb-3">
                <p class="mb-0 font-weight-bold text-secondary text-uppercase mb-3">General Rules</p>
                <p class="mb-4">
                 <ul>
-                  <li>College ID card is mandatory.</li>
+                  <img src="images/qr.jpg" alt="" height="300px" width="300px"><br>
+                  <br>
+                  <h3>For UPI Payment : </h3><h4 style="color:red">kvbupiqr.99188@kvb</h4>
+                  
+                  <br><li>College ID card is mandatory.</li>
                   <li>Only formal wear is allowed. (Jeans, Tee-shirt and casual wear is strictly prohibited)</li>
                   <li>Participants are not allowed to use smartphones or other electronic gadgets inside the campus.</li>
                   <li>Decision of the judges will be final and binding.</li>
