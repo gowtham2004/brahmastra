@@ -240,14 +240,19 @@
 
            <div class="col-md-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
              <div class="p-2 mb-3">
+              <br><br>
+              <p class="mb-0 font-weight-bold text-secondary text-uppercase mb-3">Payment Details</p>
+              <p class="mb-4">
+                <ul>
+                  <img src="images/qr.jpg" alt="" height="300px" width="300px"><br><br>
+                  <h4>Merchant Name: </h4><h5>Chettinad College Of Engineering And Technology</h5><br><br>
+                  <h4>For UPI Payment : </h4><h4 style="color:red">kvbupiqr.99188@kvb</h4>
+                </ul>
+              <br><br><br><br><br>              
                <p class="mb-0 font-weight-bold text-secondary text-uppercase mb-3">General Rules</p>
                <p class="mb-4">
                 <ul>
-                  <img src="images/qr.jpg" alt="" height="300px" width="300px"><br>
-                  <br>
-                  <h3>For UPI Payment : </h3><h4 style="color:red">kvbupiqr.99188@kvb</h4>
-                  
-                  <br><li>College ID card is mandatory.</li>
+                  <li>College ID card is mandatory.</li>
                   <li>Only formal wear is allowed. (Jeans, Tee-shirt and casual wear is strictly prohibited)</li>
                   <li>Participants are not allowed to use smartphones or other electronic gadgets inside the campus.</li>
                   <li>Decision of the judges will be final and binding.</li>
