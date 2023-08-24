@@ -44,6 +44,6 @@
     $stmt->bindParam(':user_id', $user_id, PDO::PARAM_INT);
     $stmt->execute();
     $_SESSION['event_status'] = TRUE;
-    header("Location:cseevent.php");
+    header("Location:student_dashboard.php");
   }
 ?>
