@@ -1,5 +1,6 @@
 <?php
     if(isset($_GET['parameter'])){
+        include_once("../includes/config.php");
         $param = $_GET['parameter'];
         $data = explode(",",$param);
         $event_dept = $data[0];
@@ -15,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 
-    <title>ADMIN-Dashboard</title>
+    <title>EVENT Page</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -44,8 +45,8 @@
 						 <option value="50">50</option>
 						 <option value="70">70</option>
 						 <option value="100">100</option>
-            <option value="5000">Show ALL Rows</option>
-						</select>
+                    <option value="5000">Show ALL Rows</option>
+					</select>
 			 		
 			  	</div>
         </div>
@@ -64,19 +65,32 @@
     </thead>
     <tbody>
         <?php 
-            $query = "SELECT * FROM event_register";
-            foreach($data as $row) { ?>
+            $query = "SELECT * FROM event_register WHERE event_dept = :dept AND event_name = :event_name";
+            $stmt = $dbh->prepare($query);
+            $stmt->bindParam(':dept', $data[0]);
+            $stmt->bindParam(':event_name', $data[1]);
+            $stmt->execute();
+            $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            if($stmt->rowCount() > 0){
+            foreach ($result as $row) { ?>
             <tr>
-                <td><?php echo $row; ?></td>
-                <td><?php echo $row; ?></td>
-                <td><?php echo $row; ?></td>
-                <td><?php echo $row; ?></td>
+                <td><?php echo $row["username"]; ?></td>
+                <td><?php echo $row["event_name"]; ?></td>
+                <td><?php echo $row["event_dept"]; ?></td>
+                <td><?php echo $row["dept"]; ?></td>
             </tr>
-        <?php } ?>
+        <?php } } ?>
     <tbody>
 </table>
 
 <!--Start Pagination -->
+            <div class='pagination-container'>
+				<nav>
+				  <ul class="pagination">
+				   <!--	Here the JS Function Will Add the Rows -->
+				  </ul>
+				</nav>
+			</div>
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
