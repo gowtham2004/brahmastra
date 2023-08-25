@@ -13,7 +13,7 @@
 			<form class="group" action="login_register.php" method="post">
 				<div class="group">
 					<label for="user" class="label">EMAIL ADDRESS</label>
-					<input id="email" name="email" required="required" type="text" class="input" placeholder="Enter your Email-id">
+					<input id="email" name="email" required="required" type="email" class="input"  placeholder="Enter Your Email Here" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Enter a valid email address">
 				</div>
 				<div class="group">
 					<label for="pass" class="label">PASSWORD</label>
@@ -34,11 +34,11 @@
 			<div class="sign-up-htm">
 				<div class="group">
 					<label for="user" class="label">NAME</label>
-					<input id="username" name="username" required="required" type="text" class="input" placeholder="Enter your name">
+					<input id="username" name="username" required="required" type="text" class="input" placeholder="Enter your name" pattern="[A-Za-z ]+" title="Only letters and spaces are allowed">
 				</div>
 				<div class="group">
 					<label for="pass" class="label">EMAIL ADDRESS</label>
-					<input id="email" name="email" required="required"  class="input" type="text" placeholder="Enter your Email-id">
+					<input id="email" name="email" required=""  class="input" type="email" placeholder="Enter your Email-id"  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Enter a valid email address">
 				</div>
 				<div class="group">
 					<label for="pass" class="label">WHATSAPP NUMBER</label>
