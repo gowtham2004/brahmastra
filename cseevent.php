@@ -136,23 +136,55 @@ function closeNav() {
         <h4 class="modal-title">PAPERIO</h4>
       </div>
       <div class="modal-body">
-        <p>Are you a passionate Coder who likes to play with Algorithmic challenges,then sharpen your wit to face an exhilarating set of problems. Remember speed and accuracy matters a lot. Come up with a solution, code it and beat the clock to prove your prowess</p>
-		<br>
-		
-		<p><b>FORMAT </b><br>
-		• It is a single round coding contest with six problems,spanning for 150 minutes<br>
-		• Problem Statement will be given such that the input to the program and the desired output are defined<br>
-		• Participants are expected to write the code that performs the necessary processing/transformations<br>
-		• A submitted solution is checked against several testcases and a response will be generated<br>
-		• The objective is to solve the as many problems as possible</p>
+        
+      <p><b>RULES AND INSTRUCTION </b><br>
+      Paper presentation aims at giving a platform to young engineers to fuel their brains to ideate the ideas never existed. The events intense to encourage our inventions , scientific investigations and research to promote their application for development in all sectors of engineering and technology.</P>
+
+      <p><b>CALL FOR PAPER </b><br>
+      Contributions from students of Diploma, bachelors and masters of engineering colleges to share their innovative research work.</P>
+
+      <p><b>THEME FOR PAPER </b><br>
+      Students can select any technical subject related to Computer Science and Engineering or whether the thoughts or vision of students can reach</P>
+
+      <p><b>DOMAIN </b><br>
+      •	Artificial Intelligence.<br>
+      •	Artificial Intelligence.<br>
+      • Big data<br>
+      • Block Chain technology<br>
+      •	Cloud Computing<br>
+      • Cluster Computing<br>
+	    • Edge Computing.<br>
+      • Embedded Systems.<br>
+      • Internet Of Things.<br>
+      • Grid Computing.<br>
+      •	Li-fi Technology.<br>
+      •	Nano Computing.<br>
+      •	Quantum Computing.<br>
+      •	Robotics.<br>
+      •	Virtual Reality.<br>
+
+
 		
 		<p><b>RULES</b><br>
-		• Each team should have two members<br>
-		• The team members need not be from the same institution/college<br>
-		• Mobile phones and other materials are not allowed inside the contest arena<br>
-		• Teams involved in any kind of malpractice will be immediatly disqualified<br>
-		• The decision taken by the organizers will be final<br>
-		• Lone wolves are not allowed</p>
+		1)	The presentation topics can be selected from the domains mentioned above. You are open to choose other technology which comes under Computer Science.<br>
+    2)	Maximum number of participants in a team is 2.<br>
+    3)	A team will get 7 minutes ( 5 minutes for presentation ,followed 2 minutes for question and answer session).<br>
+    4)	The mail with ppt submission contains:<br>
+                        •	Group name.<br>
+                        •	Title – theme of paper.<br>
+                        •	Name of members in team.<br>
+                        •	In presentation (ppt).<br>
+                        •	Format example : Gmail Subject<br>
+                                          o	Team ABC.<br>
+                                          o	Quantum Computing.<br>
+                                          o	Member 1 , Member 2.<br>
+    5)	Last day to submit soft copy of your report (via e-mail) will be two days prior to the day of presentation.<br>
+    6)	The decision of judges will be final and no arguments or appeal will be entertained.<br>
+    7)	Time limit should be strictly followed and extension may lead to deduction of marks.<br>
+    8)	Student should have their college id card.<br>
+    9)	Deadline to submit your ppt 20.09.2023(Wednesday).<br>
+    10)	Send your ppt to gmail id brahmastra23cse@gmail.com
+
 		
 		<p><b>CONTACT DETAILS</b><br>
       Giriraaj.L : 9344131522<br>
@@ -181,23 +213,30 @@ function closeNav() {
         <h4 class="modal-title">Tech Crack</h4>
       </div>
       <div class="modal-body">
-		<p>Are you someone who loves designing as well as coding? Have you sat hours at an end trying to make a website and loved it?</p>
-		This is Tech Crack, a competition where you can showcase your talents in coding as<br> well as designing. Put your skills to the test and design a website as the clock ticks<br>
-		
-		<br><p><b>Round 1</b><br>
-		• There will be an MCQ in all the web technologies which will test your design skills<br>
-		• There will be 30 questions which has to be answered in 30 minutes</p>
-		
-		<p>Round 2</b><br>
-		• You will be given a template on spot, out of which you need to create the nearest match of it<br>
-		• The team who creates an exact or nearest match within a short period of time will be declared as winners</p>
 		
 		<p><b>RULES</b><br>
-		• A team must consists of 2 members<br>
-		• Team members can be from different colleges<br>
-		• Usage of internet, mobile phones and other electronic gadgets is strictly prohibited<br>
-		• Basic knowledge in HTML, CSS and JavaScript is needed<br>
-		• Decision of the Judges will be final</p>
+    There will be 3 rounds.<br>
+    2) First round : MCQ<br>
+          •	There will be 20 questions.<br>
+          •	Time allocated-20 minutes.<br>
+          •	Participants will be shortlisted based on their marks.<br>
+    3) Second round : Basic Programming<br>
+          •	There will be 5 programming questions.<br>
+          •	Participants can choose any of the following pogramming languages for 2nd & 3rd
+    rounds<br>   
+          •	C<br>
+          •	C++<br>
+          •	JAVA<br>
+          •	Python<br>
+          •	Time allocated-40 minutes.<br>
+          •	 Participants will be shortlisted based on their performance.<br>
+    4) Third round : Advanced Programming<br>
+          •	 There will be one question.<br>
+          •	 Time allocated-45 minutes.<br>
+          •	 Participants who first successfully complete the problem will be considered the Winner.<br>
+    5) Participants will be provided with paper for practicing the problems logic.<br>
+    6) Participants can participate in pairs (2 persons per team)<br>
+</p>
 		
 		<p><b>CONTACT DETAILS</b><br>
 		Manojkumar.P : 8825792220<br>
@@ -224,35 +263,18 @@ function closeNav() {
         <h4 class="modal-title">Postero</h4>
       </div>
       <div class="modal-body">
-		<p> Have you always been fascinated by the world of Android? Then brace yourselves for 'Postero 2k23'.</p>
-		<br> Here's your chance to prove that you're unbeatable in your app development skills</br>
-		<p><b>DESCRIPTION</b><br>
-		Are you someone who’s always got the eye for spotting errors? Then this round’s for you! It’s just a warm-up to the much awaited Android app development round! 
-		This will be a code debugging round, where you will be provided with a program with some errors in it.
-		You’ll have to debug the errors within the given time. 
-		Eclipse IDE will be used. Let’s see how you debug your way through the grand finals !</p>
-		
-		<p><br><b>Round 1</b></br>
-		• The first round will be a debugging round in which the participants will be debugging a program<br>
-	    • The selection will be based on the maximum number of errors found and least time taken to correct it<br>
-		• Eclipse IDE will be used for this round<br></p>
-		
-		<p><b>DESCRIPTION</b><br>
-		Winning this round is what it takes to be THE Postero. Can you become an Postero? Then show us how good your designing and implementing skills are in Android! 
-		It’s more than enough to have a basic understanding of Android, because, guess what, you’ll be given Internet access! 
-		This round will be an Android App Development round. 
-		In this, you’ll have to choose a slot and develop an Android app for the problem statement specified in that slot. 
-		Can you, with the help of Mr.Google, make your way to becoming the Postero of 2k23?
-		
-		<p><br><b>Round 2</b></br>
-		• This is the round where you will be exhibiting your android skills<br>
-		• You will be given with the problem statement for which you need to showcase your skills<br>
-		• The winners will be selected on the basis of UI/UX, performance, Memory Space usage<br></p>
 		
 		<p><br><b>RULES</b></br>
-		• Competitors must develop only native android apps<br>
-		• Competitors must bring their own android phones and connectors in case they need<br> 
-		• Participants must only work with android studio<br></p>
+		1)	The topic of the poster will be provided on the spot through a lot basis, and it will be based on a specific theme.<br>
+    2)	Participants are free to use any open editing tool of their choice, such as Photoshop, Picsart, Canva, etc., to design their posters.<br>
+    3)	The event has a time limit of 60 mins for participants to create their posters.<br>
+    4)	The theme of the event will be both technical topics and non-technical topics.<br>
+    5)	Participants can use their own mobile phones or laptops for designing. If a participant requires a system, they should inform the Event Coordinators in advance via phone.<br>
+    6)	The competition consists of a single round, and the winner will be determined based on the posters created during this round.<br>
+    7)	Each team should consist of 2 members.<br>
+    8)	Posters will be evaluated based on creativity, idea representation, and presentation.<br>
+    9)	The decision of the jury panel will be considered final<br>
+<br></p>
 		
 		<p><br><b>CONTACT DETAILS</b></br>
       Ansari.L: 9344131522<br>
@@ -270,49 +292,7 @@ function closeNav() {
   </div>
 </div>
 
-    <div id="mypostero" class="modal fade" role="dialog" >
-  <div class="modal-dialog" >
 
-    <!-- Modal content-->
-    <div class="modal-content" >
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Postero</h4>
-      </div>
-      <div class="modal-body">
-        <p>Are you a passionate Coder who likes to play with Algorithmic challenges,then sharpen your wit to face an exhilarating set of problems. Remember speed and accuracy matters a lot. Come up with a solution, code it and beat the clock to prove your prowess</p>
-		<br>
-		
-		<p><b>FORMAT </b><br>
-		• It is a single round coding contest with six problems,spanning for 150 minutes<br>
-		• Problem Statement will be given such that the input to the program and the desired output are defined<br>
-		• Participants are expected to write the code that performs the necessary processing/transformations<br>
-		• A submitted solution is checked against several testcases and a response will be generated<br>
-		• The objective is to solve the as many problems as possible</p>
-		
-		<p><b>RULES</b><br>
-		• Each team should have two members<br>
-		• The team members need not be from the same institution/college<br>
-		• Mobile phones and other materials are not allowed inside the contest arena<br>
-		• Teams involved in any kind of malpractice will be immediatly disqualified<br>
-		• The decision taken by the organizers will be final<br>
-		• Lone wolves are not allowed</p>
-		
-		<p><b>CONTACT DETAILS</b><br>
-      Anssari.J : 9843595539<br>
-      Harinisri.B : 8248999137</p>
-		 </p>
-		  <?php if(isset($_SESSION['login_status']) && !isset($_SESSION['event_status'])) { ?>
-      <button type="button" style="background-color:green; " class="btn btn-default btn-block" onclick="window.location.href='event_register.php';">Register Now</button> 
-    <?php } else if(isset($_SESSION['event_status'])) { ?>
-      <h3 style="color: green;text-align:center;">You Are Registered!</h3>
-    <?php } else { ?>
-      <button type="button" class="btn btn-default btn-block" onclick="regi()">Register</button>
-      <?php } ?>
-      </div>     
-    </div>
-  </div>
-</div>
 
 
    
@@ -335,23 +315,16 @@ function closeNav() {
         <h4 class="modal-title">Thegidi</h4>
       </div>
       <div class="modal-body">
-		<p> Idea's change the way a person can think. It is based on how we express them. Posters are the way of exhibiting ideas.</p>
-		<br> We have come with the theme. Try to do something innovative in a way that will inspire generations</br><br>
-		
-		<p><b>FORMAT</b><br>
-			• On-spot theme will be given<br>
-			• Only one round is conducted on which the winner will be selected<br>
-			• The working platform will be <b>Adobe Photoshop CC 2015</b><br>
-			• The maximum time Limit will be 120 minutes</p>
 		
 		<p><b>RULES</b><br>
-			• A team can consists of maximum two members<br>
-			• Teams can consists of students from different colleges<br>
-			• Plagiarism is not allowed<br>
-			• Usage of patterns must be priorly informed to the co-ordinators<br>
-			• Minimum knowledge is required<br>
-			• Judges decision is final</p>
-			
+    1)	Each team can consist of a maximum of 2 members.<br>
+    2)	The event will comprise three levels, each with its own unique challenge.<br>
+    3)	Level 1: A PowerPoint presentation (PPT) will be shown to all participants.<br>
+    4)	Level 2 and Final: Each team will be provided with a headphone to participate in the challenge.<br>
+    5)	Throughout the event, make sure to attentively follow the instructions provided by the event coordinators.<br>
+    6)	Your success in each level will depend on your ability to interpret and implement the instructions correctly.<br>
+</p>
+			  
 		<p><b>CONTACT DETAILS</b><br>
 		  Pranav Jeyan V : 9842194689<br>
 			Kalpana Chawla S : 8248280895
