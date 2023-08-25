@@ -18,7 +18,7 @@
     $smt->bindParam(':mail',$email,PDO::PARAM_STR);
     $smt->execute();
     if($smt->rowCount() > 0) {
-      header("Location:alerts/alert_email.html");
+      echo("<script>alert('User Email Already Exist!'); window.location.href='event_register.php';</script>");
     }
     else {
 
@@ -27,7 +27,7 @@
     $smt->bindParam(':phone',$phone,PDO::PARAM_STR);
     $smt->execute();
     if($smt->rowCount() > 0) {
-      header("Location:alerts/alert_phone.html");
+      echo("<script>alert('User Phone Number Already Exist!'); window.location.href='event_register.php';</script>");
     }
     else {
 
@@ -36,7 +36,7 @@
     $smt->bindParam(':t_id',$trans_id,PDO::PARAM_STR);
     $smt->execute();
     if($smt->rowCount() > 0) {
-      header("Location:alerts/alert.html");
+      echo("<script>alert('User Transaction ID Already Exist!'); window.location.href='event_register.php';</script>");
     }
     else {
       $sql = "SELECT reg_id AS last_id FROM event_register ORDER BY last_id DESC LIMIT 1";

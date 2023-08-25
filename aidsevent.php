@@ -83,7 +83,7 @@ function closeNav() {
         <figure class="effect-oscar wowload fadeInUp">
             <img src="images/portfolio/2.jpeg" height="100%" width="100%" alt="img01"/>
             <figcaption><br><br><br><br><br>
-                <h2>Brainaza</h2>
+                <h2>AI Quiz</h2>
                 <p>Time: 1PM-3PM<br>Venue: xxxxxxx<br>
                     <br>
                 <a data-toggle="modal" data-target="#myaids2">View more</a></p>
@@ -194,7 +194,7 @@ function closeNav() {
     <div class="modal-content" >
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">BRAINAZA</h4>
+        <h4 class="modal-title">AI Quiz</h4>
       </div>
       <div class="modal-body">
 		

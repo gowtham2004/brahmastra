@@ -308,7 +308,7 @@ $(document).ready(function() {
     var eventDataSets = [
         [
             { eventName: "Paper Presentation", count:<?php $query = "SELECT id FROM event_register WHERE event_dept='aids' AND event_name='Paper Presentation'"; $bht = $dbh->prepare($query); $bht->execute(); echo($bht->rowCount()); ?> },
-            { eventName: "Brainaza", count: <?php $query = "SELECT id FROM event_register WHERE event_dept='aids' AND event_name='AI Quiz'"; $bht = $dbh->prepare($query); $bht->execute(); echo($bht->rowCount()); ?> },
+            { eventName: "AI Quiz", count: <?php $query = "SELECT id FROM event_register WHERE event_dept='aids' AND event_name='AI Quiz'"; $bht = $dbh->prepare($query); $bht->execute(); echo($bht->rowCount()); ?> },
             { eventName: "Bug Finder", count: <?php $query = "SELECT id FROM event_register WHERE event_dept='aids' AND event_name='Bug Finder'"; $bht = $dbh->prepare($query); $bht->execute(); echo($bht->rowCount()); ?> },
             { eventName: "E Sports", count: <?php $query = "SELECT id FROM event_register WHERE event_dept='aids' AND event_name='Bidding War'"; $bht = $dbh->prepare($query); $bht->execute(); echo($bht->rowCount()); ?> }
 
