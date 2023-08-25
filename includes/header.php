@@ -36,7 +36,7 @@
           </div>
       </div>
       <div id="mySidenav" class="sidenav">
-        <b style="padding-left:25%;font-size:170%;color:white;">Brahmastra:'23</b>  
+        <b style="padding-left:25%;font-size:170%;color:white;">Brahmastra'23</b>  
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="padding-left:70%">&times;</a> 
         <br><br><br><br><br>
         <h4 style="font:Calibri"><a href="index.html">Home</a>
