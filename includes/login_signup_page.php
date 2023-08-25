@@ -42,7 +42,7 @@
 				</div>
 				<div class="group">
 					<label for="pass" class="label">WHATSAPP NUMBER</label>
-					<input id="wnum" name="wnum" required="required"  type="text" class="input" placeholder="Enter your Whatsapp Number">
+					<input id="wnum" name="wnum" required="required"  type="text" class="input" placeholder="Enter your Whatsapp Number" pattern="[0-9]{10}" title="Enter a 10-digit mobile number">
 				</div>
 				<div class="group">
 					<label for="pass" class="label">PASSWORD</label>
