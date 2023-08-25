@@ -1,4 +1,7 @@
-<?php session_start(); ?>
+<?php 
+try {
+session_start(); 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -174,7 +177,7 @@ function closeNav() {
 &#8226; Time limit should be strictly followed, and extension may lead to deduction of marks.<br>
 &#8226; Students must have their college ID.<br>
 &#8226; Deadline to submit your ppt: 20.09.2023 (Wednesday).<br>
-&#8226; Send your ppt to email id.</p>
+&#8226; Send your ppt to brahmastra23ece@gmail.com</p>
 
 <p><strong> <h4>  Contact Details:</h4></strong></p>
 <p>1. Rajavel N - 9361182825<br>
@@ -425,3 +428,9 @@ you can find another clue. <br>
 
 <?php include("includes/login_signup_page.php"); ?>
 </html>
+<?php 
+}
+catch (Exception $e) {
+    echo("<script>alert('An Error Detected Contact Web Admin'); window.location.href = 'index.html';</script>");
+}
+?>

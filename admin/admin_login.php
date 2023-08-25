@@ -1,4 +1,5 @@
-<?php 
+<?php
+    try {
     session_start();
     if(isset($_POST['submit'])) {
         $user  = $_POST['user'];
@@ -44,3 +45,9 @@
     </div>
 </body>
 </html>
+<?php 
+}
+catch (Exception $e) {
+    echo("<script>alert('An Error Detected Contact Web Admin'); window.location.href = '../index.html';</script>");
+}
+?>

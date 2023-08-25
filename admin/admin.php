@@ -1,7 +1,8 @@
 <?php
+    try {
     session_start();
     if(isset($_SESSION['admin_login'])){ 
-        include("../includes/config.php");
+        include("config.php");
 ?>
 
 <!DOCTYPE html>
@@ -706,4 +707,8 @@ $(document).ready(function() {
     else {
         header('Location: ../index.html');
     }
+}
+catch (Exception $e) {
+    echo("<script>alert('An Error Detected Contact Web Admin'); window.location.href = '../index.html';</script>");
+}
 ?>

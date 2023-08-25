@@ -1,3 +1,8 @@
+<?php 
+    try {
+        if(isset($_SESSION['admin_login'])) {
+?>
+
 <!-- Page Wrapper -->
 <div id="wrapper">
 
@@ -55,7 +60,7 @@
         <div id="collapsecse" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">EVENTS</h6>
-                <a class="collapse-item" href="event_details.php?parameter=cse,Paperio">Paperio</a>
+                <a class="collapse-item" href="event_details.php?parameter=cse,Paper Presentation">Paperio</a>
                 <a class="collapse-item" href="event_details.php?parameter=cse,Techcrack">Tech Crack</a>
                 <a class="collapse-item" href="event_details.php?parameter=cse,Postero">Postero</a>
                 <a class="collapse-item" href="event_details.php?parameter=cse,Thegidi">Thegidi</a>
@@ -135,9 +140,7 @@
         <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
             <!-- Sidebar Toggle (Topbar) -->
-            <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                <i class="fa fa-bars"></i>
-            </button>
+                <h3 style="color:black">Brahmastra Event Master</h3>
 
             <!-- Topbar Search -->
             <!--<form
@@ -214,3 +217,14 @@
             </ul>
 
         </nav>
+
+        <?php
+        }
+            else {
+                header("Location:../index.html");
+            }
+            }
+            catch (Exception $e) {
+                echo("<script>alert('An Error Detected Contact Web Admin'); window.location.href='../index.html'</script>");
+            }
+        ?>

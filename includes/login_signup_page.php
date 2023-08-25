@@ -1,3 +1,6 @@
+<?php
+	try {
+?>
 <div id="register" class="modal fade" role="dialog">
   <div class="modal-dialog" style="width:520px; max-height:100%; max-width:100%;">
 
@@ -63,3 +66,9 @@
 
   </div>
 </div>
+<?php
+	}
+	catch (Exception $e) {
+		echo("<script>alert('An Error Detected Contact Web Admin'); window.location.href = 'index.html';</script>");
+	}
+?>

@@ -11,6 +11,6 @@ try
 }
 catch (PDOException $e)
 {
-    echo("<script>alert('An Error Detected Contact Web Admin'); window.location.href = 'index.html';</script>");
+    echo("<script>alert('An Error Detected Contact Web Admin'); window.location.href = '../index.html';</script>");
 }
 ?>
