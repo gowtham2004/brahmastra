@@ -174,8 +174,10 @@ function closeNav() {
   <p><b>TIPS</b><br>
   The  main objective of the competition that the participant has to keep in mind while preparing is to develop and present a holistic style of approach which is able to motivate the audience. The report being supported/supplemented by technical reference papers gives an added advantages to the participants.<br></pr>
 
-  
-		
+  <p><b>Student Co-ordinators</b><br>
+
+    Kailash Nagappan.S - 9345612204<br>
+    Manoj.S.P - 9952386128<br>	
 		
 		  <?php if(isset($_SESSION['login_status']) && !isset($_SESSION['event_status'])) { ?>
       <button type="button" style="background-color:green; " class="btn btn-default btn-block" onclick="window.location.href='event_register.php';">Register Now</button> 
@@ -224,6 +226,13 @@ function closeNav() {
     •	The round will have a time limit for pressing the buzzer<br>
     •	Limited to the rules of each round and penalties for violations<br>
 
+    <p><b>Student Coordinator</b><br>
+    Abarna.S - 7806964039<br>
+    Arunthathi.R - 8667282744<br>
+
+
+    
+
 
 
 		 <?php if(isset($_SESSION['login_status']) && !isset($_SESSION['event_status'])) { ?>
@@ -267,6 +276,11 @@ function closeNav() {
     •	Each correct answer is awarded a certain number of points.<br>
     •	The rounds will have a time limit of 45mins<br>
 
+    <p><b>Student Coordinator</b><br>
+    Sarathi.R - 7397580370<br>
+    Mohan.M - 8903003808<br>
+
+
 		
 		 <?php if(isset($_SESSION['login_status']) && !isset($_SESSION['event_status'])) { ?>
       <button type="button" style="background-color:green; " class="btn btn-default btn-block" onclick="window.location.href='event_register.php';">Register Now</button> 
@@ -297,6 +311,9 @@ function closeNav() {
 		•	4 members form a team(TDM).<br>
 		•	One team will be completing with another team the winner will enter the next round repeated until the final team will be selected.<br>
 		
+    <p><b>Student Coordinator</b><br>
+    Yogeshwaran.S - 8610316932<br>
+    Mohammed Imran.K - 9150564749<br>
 		 
 		  <?php if(isset($_SESSION['login_status']) && !isset($_SESSION['event_status'])) { ?>
       <button type="button" style="background-color:green; " class="btn btn-default btn-block" onclick="window.location.href='event_register.php';">Register Now</button> 
