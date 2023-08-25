@@ -1,4 +1,6 @@
-<?php session_start();
+<?php 
+try {
+session_start();
   if(!isset($_SESSION['event_status'])) {
 ?>
 
@@ -327,4 +329,8 @@ document.addEventListener("DOMContentLoaded", function() {
   else{
     header("Location:index.html");
   }
+}
+catch (Exception $e) {
+    echo("<script>alert('An Error Detected Contact Web Admin'); window.location.href = 'index.html';</script>");
+}
 ?>

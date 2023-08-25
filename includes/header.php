@@ -1,4 +1,6 @@
-
+<?php
+  try {
+?>
 <div class="navbar-wrapper">
       <div class="container">
             <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="top-nav" >
@@ -46,3 +48,9 @@
         <a href="eeeevent.php">EEE</a>
         <a href="mechevent.php">MECH</a>
 </div>
+<?php 
+}
+catch (Exception $e) {
+    echo("<script>alert('An Error Detected Contact Web Admin'); window.location.href = 'index.html';</script>");
+}
+?>

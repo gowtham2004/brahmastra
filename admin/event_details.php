@@ -1,4 +1,5 @@
 <?php
+try {
 session_start();
 if($_SESSION['admin_login']){
 if(isset($_GET['parameter'])){
@@ -6,7 +7,7 @@ if(isset($_GET['parameter'])){
     $data = explode(",",$param);
     $event_dept = $data[0];
     $event_name = $data[1];
-    include_once("../includes/config.php");
+    include_once("config.php");
     if(isset($_GET['inid'])) {
         $id=$_GET['inid'];
         $status=0;
@@ -54,6 +55,7 @@ if(isset($_GET['parameter'])){
 <body id="page-top">
 
     <?php include("header.php"); ?>
+    <h3 style="margin-left:40px;text-transform:uppercase;"><?php echo($event_dept."-".$event_name) ?></h3>
     <div class="container">
       <div class="header_wrap">
         <div class="num_rows">
@@ -199,4 +201,8 @@ if(isset($_GET['parameter'])){
     else {
         header('Location: admin.php');
     }
+}
+catch (Exception $e) {
+    echo("<script>alert('An Error Detected Contact Web Admin'); window.location.href = '../index.html';</script>");
+}
 ?>

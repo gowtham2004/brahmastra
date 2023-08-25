@@ -1,4 +1,7 @@
-<?php session_start(); ?>
+<?php 
+try {
+session_start(); 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -425,3 +428,9 @@ you can find another clue. <br>
 
 <?php include("includes/login_signup_page.php"); ?>
 </html>
+<?php 
+}
+catch (Exception $e) {
+    echo("<script>alert('An Error Detected Contact Web Admin'); window.location.href = 'index.html';</script>");
+}
+?>
