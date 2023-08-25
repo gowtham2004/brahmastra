@@ -7,15 +7,17 @@
         $userName = $_POST['username'];
         $email = $_POST['email'];
         $pass = $_POST['password'];
+        $what_num = $_POST['wnum'];
         $query = "SELECT * FROM login_register where email = '$email'";
         $stmt = $dbh->prepare($query);
         $stmt->execute();
         $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
         if($stmt->rowCount() <= 0){
-            $sql="INSERT INTO login_register(username,email,password) VALUES(:username,:email,:password)";
+            $sql="INSERT INTO login_register(username,email,what_num,password) VALUES(:username,:email,:what_num,:password)";
             $query = $dbh->prepare($sql);
             $query->bindParam(':username',$userName,PDO::PARAM_STR);
             $query->bindParam(':email',$email,PDO::PARAM_STR);
+            $query->bindParam(':what_num',$what_num,PDO::PARAM_STR);
             $query->bindParam(':password',$pass,PDO::PARAM_STR);
             $result = $query->execute();
             if($result){

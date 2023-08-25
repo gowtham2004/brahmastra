@@ -41,6 +41,10 @@
 					<input id="email" name="email" required="required"  class="input" type="text" placeholder="Enter your Email-id">
 				</div>
 				<div class="group">
+					<label for="pass" class="label">WHATSAPP NUMBER</label>
+					<input id="wnum" name="wnum" required="required"  type="text" class="input" placeholder="Enter your Whatsapp Number">
+				</div>
+				<div class="group">
 					<label for="pass" class="label">PASSWORD</label>
 					<input id="password" name="password" required="required"  type="password" class="input" data-type="password" placeholder="Enter your password">
 				</div>
