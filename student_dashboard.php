@@ -1,4 +1,5 @@
 <?php 
+try {
   session_start();
   include("includes/config.php");
   if(isset($_SESSION['event_status'])) { 
@@ -175,5 +176,8 @@ function closeNav() {
     else{
         header("Location:cseevent.php");
     }
-
+}
+catch (Exception $e) {
+    echo("<script>alert('An Error Detected Contact Web Admin'); window.location.href = 'index.html';</script>");
+}
 ?>

@@ -1,3 +1,6 @@
+<?php 
+    try {
+?>
 <br>
 <br>
 <br>
@@ -12,3 +15,9 @@
 
 <br> <b>© 2k23 Brahmastra. All rights reserved.</b>
 </div>
+<?php 
+}
+catch (Exception $e) {
+    echo("<script>alert('An Error Detected Contact Web Admin'); window.location.href = 'index.html';</script>");
+}
+?>
